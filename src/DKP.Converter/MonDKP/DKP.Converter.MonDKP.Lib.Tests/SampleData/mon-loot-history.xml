@@ -1,0 +1,1802 @@
+<loothistory>
+    <lootentry>
+        <player>Bøunz</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855932</timestamp>
+        <cost>-81</cost>
+    </lootentry>
+    <lootentry>
+        <player>Lycaria</player>
+        <itemname>Onyxias Kopf</itemname>
+        <itemnumber>18423</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855883</timestamp>
+        <cost>-167</cost>
+    </lootentry>
+    <lootentry>
+        <player>Thamos</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855818</timestamp>
+        <cost>-86</cost>
+    </lootentry>
+    <lootentry>
+        <player>Joediehoe</player>
+        <itemname>Onyxias Kopf</itemname>
+        <itemnumber>18423</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855780</timestamp>
+        <cost>-240</cost>
+    </lootentry>
+    <lootentry>
+        <player>Snowblood</player>
+        <itemname>Blutfangkapuze</itemname>
+        <itemnumber>16908</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855730</timestamp>
+        <cost>-67</cost>
+    </lootentry>
+    <lootentry>
+        <player>Jetlee</player>
+        <itemname>Heiligenschein der Erhabenheit</itemname>
+        <itemnumber>16921</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855729</timestamp>
+        <cost>-111</cost>
+    </lootentry>
+    <lootentry>
+        <player>Rexmo</player>
+        <itemname>Heiligenschein der Erhabenheit</itemname>
+        <itemnumber>16921</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855681</timestamp>
+        <cost>-51</cost>
+    </lootentry>
+    <lootentry>
+        <player>Breakingnät</player>
+        <itemname>Helm des Zorns</itemname>
+        <itemnumber>16963</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855680</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Gabriol</player>
+        <itemname>Ring der Bindung</itemname>
+        <itemnumber>18813</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855640</timestamp>
+        <cost>-6</cost>
+    </lootentry>
+    <lootentry>
+        <player>Asfali</player>
+        <itemname>Zauberfoliant des uralten Grundsteins</itemname>
+        <itemnumber>17067</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578855636</timestamp>
+        <cost>-40</cost>
+    </lootentry>
+    <lootentry>
+        <player>Hanswurst</player>
+        <itemname>Essenz der reinen Flamme</itemname>
+        <itemnumber>18815</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578517056</timestamp>
+        <cost>-30</cost>
+    </lootentry>
+    <lootentry>
+        <player>Amagedonn</player>
+        <itemname>Malistar-Verteidiger</itemname>
+        <itemnumber>17106</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578517018</timestamp>
+        <cost>-10</cost>
+    </lootentry>
+    <lootentry>
+        <player>Amagedonn</player>
+        <itemname>Beinplatten des Richturteils</itemname>
+        <itemnumber>16954</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578516945</timestamp>
+        <cost>-10</cost>
+    </lootentry>
+    <lootentry>
+        <player>Breakingnät</player>
+        <itemname>Im Kern geschmiedete Schienbeinschützer</itemname>
+        <itemnumber>18806</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578516268</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Aywen</player>
+        <itemname>Finkles Lavagreifer</itemname>
+        <itemnumber>18803</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578516228</timestamp>
+        <cost>-15</cost>
+    </lootentry>
+    <lootentry>
+        <player>Jetlee</player>
+        <itemname>Das Auge der Offenbarung</itemname>
+        <itemnumber>18646</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578516187</timestamp>
+        <cost>-300</cost>
+    </lootentry>
+    <lootentry>
+        <player>Genature</player>
+        <itemname>Gewand des Cenarius</itemname>
+        <itemnumber>16833</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578515834</timestamp>
+        <cost>-101</cost>
+    </lootentry>
+    <lootentry>
+        <player>Zaba</player>
+        <itemname>Roben des Arkanisten</itemname>
+        <itemnumber>16798</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578515795</timestamp>
+        <cost>-96</cost>
+    </lootentry>
+    <lootentry>
+        <player>Thamos</player>
+        <itemname>Blasterwerfer</itemname>
+        <itemnumber>17072</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578515756</timestamp>
+        <cost>-83</cost>
+    </lootentry>
+    <lootentry>
+        <player>Failbob</player>
+        <itemname>Schulterklappen des Nachtmeuchlers</itemname>
+        <itemnumber>16823</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1578515425</timestamp>
+        <cost>-90</cost>
+    </lootentry>
+    <lootentry>
+        <player>Danyna</player>
+        <itemname>Blutfanghose</itemname>
+        <itemnumber>16909</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578515121</timestamp>
+        <cost>-251</cost>
+    </lootentry>
+    <lootentry>
+        <player>Qny</player>
+        <itemname>Malistar-Verteidiger</itemname>
+        <itemnumber>17106</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578515038</timestamp>
+        <cost>-400</cost>
+    </lootentry>
+    <lootentry>
+        <player>Sinslegend</player>
+        <itemname>Beinplatten des Zorns</itemname>
+        <itemnumber>16962</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578514995</timestamp>
+        <cost>-7</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ascadia</player>
+        <itemname>Halsschmuck des Feuerlords</itemname>
+        <itemnumber>18814</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578514952</timestamp>
+        <cost>-460</cost>
+    </lootentry>
+    <lootentry>
+        <player>Penalism</player>
+        <itemname>Im Kern geschmiedete Schienbeinschützer</itemname>
+        <itemnumber>18806</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578514327</timestamp>
+        <cost>-14</cost>
+    </lootentry>
+    <lootentry>
+        <player>Asfali</player>
+        <itemname>Finkles Lavagreifer</itemname>
+        <itemnumber>18803</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578514284</timestamp>
+        <cost>-5</cost>
+    </lootentry>
+    <lootentry>
+        <player>Lauret</player>
+        <itemname>Stab der Dominanz</itemname>
+        <itemnumber>18842</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578513942</timestamp>
+        <cost>-555</cost>
+    </lootentry>
+    <lootentry>
+        <player>Jefri</player>
+        <itemname>Roben der Prophezeiung</itemname>
+        <itemnumber>16815</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578513896</timestamp>
+        <cost>-21</cost>
+    </lootentry>
+    <lootentry>
+        <player>Amelie</player>
+        <itemname>Gewand des Cenarius</itemname>
+        <itemnumber>16833</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578513855</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Giddy</player>
+        <itemname>Stiefel der Prophezeiung</itemname>
+        <itemnumber>16811</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578513493</timestamp>
+        <cost>-180</cost>
+    </lootentry>
+    <lootentry>
+        <player>Aywen</player>
+        <itemname>Handschuhe des Cenarius</itemname>
+        <itemnumber>16831</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578513457</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Hellming</player>
+        <itemname>Schulterstücke der Macht</itemname>
+        <itemnumber>16868</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1578513417</timestamp>
+        <cost>-18</cost>
+    </lootentry>
+    <lootentry>
+        <player>Wurstmitsenf</player>
+        <itemname>Schulterklappen des Riesenjägers</itemname>
+        <itemnumber>16848</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1578513371</timestamp>
+        <cost>-101</cost>
+    </lootentry>
+    <lootentry>
+        <player>Darkegel</player>
+        <itemname>Scharfkantige Obsidianklinge</itemname>
+        <itemnumber>18822</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1578512991</timestamp>
+        <cost>-125</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ginju</player>
+        <itemname>Teufelsherzgürtel</itemname>
+        <itemnumber>16806</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578512720</timestamp>
+        <cost>-11</cost>
+    </lootentry>
+    <lootentry>
+        <player>Amelie</player>
+        <itemname>Handschuhe des Cenarius</itemname>
+        <itemnumber>16831</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578512648</timestamp>
+        <cost>-2</cost>
+    </lootentry>
+    <lootentry>
+        <player>Dägga</player>
+        <itemname>Stiefel des Nachtmeuchlers</itemname>
+        <itemnumber>16824</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578512608</timestamp>
+        <cost>-99</cost>
+    </lootentry>
+    <lootentry>
+        <player>Jetlee</player>
+        <itemname>Feuerrunenverzierter Zauberfoliant</itemname>
+        <itemnumber>19142</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578512296</timestamp>
+        <cost>-12</cost>
+    </lootentry>
+    <lootentry>
+        <player>Naeppi</player>
+        <itemname>Reif der Prophezeiung</itemname>
+        <itemnumber>16813</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578512252</timestamp>
+        <cost>-30</cost>
+    </lootentry>
+    <lootentry>
+        <player>Breakingnät</player>
+        <itemname>Drillbohrer-Scheibe</itemname>
+        <itemnumber>17066</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578512215</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Sinslegend</player>
+        <itemname>Ring des rasanten Schlags</itemname>
+        <itemnumber>18821</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1578512175</timestamp>
+        <cost>-203</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ginju</player>
+        <itemname>Teufelsherzschulterpolster</itemname>
+        <itemnumber>16807</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1578512135</timestamp>
+        <cost>-37</cost>
+    </lootentry>
+    <lootentry>
+        <player>Badabou</player>
+        <itemname>Magmagehärtete Stiefel</itemname>
+        <itemnumber>18824</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578511618</timestamp>
+        <cost>-2</cost>
+    </lootentry>
+    <lootentry>
+        <player>Aywen</player>
+        <itemname>Gürtel des Cenarius</itemname>
+        <itemnumber>16828</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1578511580</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Asfali</player>
+        <itemname>Helm des Cenarius</itemname>
+        <itemnumber>16834</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578511578</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Dukay</player>
+        <itemname>Reif der Prophezeiung</itemname>
+        <itemnumber>16813</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578511538</timestamp>
+        <cost>-44</cost>
+    </lootentry>
+    <lootentry>
+        <player>Rexmo</player>
+        <itemname>Handschuhe der Prophezeiung</itemname>
+        <itemnumber>16812</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1578510953</timestamp>
+        <cost>-103</cost>
+    </lootentry>
+    <lootentry>
+        <player>Captncaps</player>
+        <itemname>Stiefel des Riesenjägers</itemname>
+        <itemnumber>16849</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1578510909</timestamp>
+        <cost>-69</cost>
+    </lootentry>
+    <lootentry>
+        <player>Breakingnät</player>
+        <itemname>Eskhandars rechte Klaue</itemname>
+        <itemnumber>18203</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578510871</timestamp>
+        <cost>-5</cost>
+    </lootentry>
+    <lootentry>
+        <player>Káhli</player>
+        <itemname>Teufelsherzhose</itemname>
+        <itemnumber>16810</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578510833</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Bxdwow</player>
+        <itemname>Beinplatten der Macht</itemname>
+        <itemnumber>16867</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578510797</timestamp>
+        <cost>-16</cost>
+    </lootentry>
+    <lootentry>
+        <player>Frostburn</player>
+        <itemname>Halsschmuck der Erleuchtung</itemname>
+        <itemnumber>17109</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1578510462</timestamp>
+        <cost>-142</cost>
+    </lootentry>
+    <lootentry>
+        <player>Sphêre</player>
+        <itemname>Hose der Prophezeiung</itemname>
+        <itemnumber>16814</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578510441</timestamp>
+        <cost>-6</cost>
+    </lootentry>
+    <lootentry>
+        <player>Hellming</player>
+        <itemname>Ring des rasanten Schlags</itemname>
+        <itemnumber>18821</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578510385</timestamp>
+        <cost>-201</cost>
+    </lootentry>
+    <lootentry>
+        <player>Olof</player>
+        <itemname>Medaillon der beständigen Macht</itemname>
+        <itemnumber>17065</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578510338</timestamp>
+        <cost>-15</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxion</player>
+        <itemname>Stiefel der Gerechtigkeit</itemname>
+        <itemnumber>16859</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1578509937</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Bxdwow</player>
+        <itemname>Gürtel der Macht</itemname>
+        <itemnumber>16864</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578509730</timestamp>
+        <cost>-15</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ðøpe</player>
+        <itemname>Malistar-Verteidiger</itemname>
+        <itemnumber>17106</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578258294</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Cimino</player>
+        <itemname>Klinge des Verderbens</itemname>
+        <itemnumber>18816</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578258252</timestamp>
+        <cost>-121</cost>
+    </lootentry>
+    <lootentry>
+        <player>Fritt</player>
+        <itemname>Blutfanghose</itemname>
+        <itemnumber>16909</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578258213</timestamp>
+        <cost>-265</cost>
+    </lootentry>
+    <lootentry>
+        <player>Failbob</player>
+        <itemname>Blutfanghose</itemname>
+        <itemnumber>16909</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578258167</timestamp>
+        <cost>-390</cost>
+    </lootentry>
+    <lootentry>
+        <player>Pvpgotthans</player>
+        <itemname>Klinge des Verderbens</itemname>
+        <itemnumber>18816</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578257910</timestamp>
+        <cost>-345</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nebyulah</player>
+        <itemname>Beinschützer des Stormrage</itemname>
+        <itemnumber>16901</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578257850</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Recret</player>
+        <itemname>Beinplatten des Zorns</itemname>
+        <itemnumber>16962</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578257832</timestamp>
+        <cost>-45</cost>
+    </lootentry>
+    <lootentry>
+        <player>Lerix</player>
+        <itemname>Gurt des Ansturms</itemname>
+        <itemnumber>19137</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1578257790</timestamp>
+        <cost>-775</cost>
+    </lootentry>
+    <lootentry>
+        <player>Brummli</player>
+        <itemname>Das Auge der Offenbarung</itemname>
+        <itemnumber>18646</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578257462</timestamp>
+        <cost>-280</cost>
+    </lootentry>
+    <lootentry>
+        <player>Barlay</player>
+        <itemname>Feuerfester Umhang</itemname>
+        <itemnumber>18811</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578257426</timestamp>
+        <cost>-61</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nynea</player>
+        <itemname>Band der Ausbrennung</itemname>
+        <itemnumber>19140</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578257385</timestamp>
+        <cost>-350</cost>
+    </lootentry>
+    <lootentry>
+        <player>Bîmbâm</player>
+        <itemname>Gürtel des Nachtmeuchlers</itemname>
+        <itemnumber>16827</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578257332</timestamp>
+        <cost>-211</cost>
+    </lootentry>
+    <lootentry>
+        <player>Exotic</player>
+        <itemname>Kernhundzahn</itemname>
+        <itemnumber>18805</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578257191</timestamp>
+        <cost>-467</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ramschazar</player>
+        <itemname>Schärpe der geflüsterten Geheimnisse</itemname>
+        <itemnumber>18809</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1578257149</timestamp>
+        <cost>-11</cost>
+    </lootentry>
+    <lootentry>
+        <player>Gabriol</player>
+        <itemname>Brustplatte der Macht</itemname>
+        <itemnumber>16865</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578256982</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Barlay</player>
+        <itemname>Feuerrunenverzierter Zauberfoliant</itemname>
+        <itemnumber>19142</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578256944</timestamp>
+        <cost>-91</cost>
+    </lootentry>
+    <lootentry>
+        <player>Namisha</player>
+        <itemname>Roben der Prophezeiung</itemname>
+        <itemnumber>16815</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578256906</timestamp>
+        <cost>-60</cost>
+    </lootentry>
+    <lootentry>
+        <player>Vinofred</player>
+        <itemname>Teufelsherzroben</itemname>
+        <itemnumber>16809</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578256331</timestamp>
+        <cost>-189</cost>
+    </lootentry>
+    <lootentry>
+        <player>Thamos</player>
+        <itemname>Schulterklappen des Riesenjägers</itemname>
+        <itemnumber>16848</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1578256301</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Diazlite</player>
+        <itemname>Blasterwerfer</itemname>
+        <itemnumber>17072</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578256290</timestamp>
+        <cost>-116</cost>
+    </lootentry>
+    <lootentry>
+        <player>Zapzzarap</player>
+        <itemname>Schulterstücke der Macht</itemname>
+        <itemnumber>16868</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1578256265</timestamp>
+        <cost>-6</cost>
+    </lootentry>
+    <lootentry>
+        <player>Badabou</player>
+        <itemname>Brustschutz der Gerechtigkeit</itemname>
+        <itemnumber>16853</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1578256245</timestamp>
+        <cost>-6</cost>
+    </lootentry>
+    <lootentry>
+        <player>Marole</player>
+        <itemname>Schulterklappen des Nachtmeuchlers</itemname>
+        <itemnumber>16823</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1578255841</timestamp>
+        <cost>-51</cost>
+    </lootentry>
+    <lootentry>
+        <player>Dukay</player>
+        <itemname>Mantel der Prophezeiung</itemname>
+        <itemnumber>16816</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1578255790</timestamp>
+        <cost>-185</cost>
+    </lootentry>
+    <lootentry>
+        <player>Furbsn</player>
+        <itemname>Gürtel des Cenarius</itemname>
+        <itemnumber>16828</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578255606</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Breakingnät</player>
+        <itemname>Gürtel der Macht</itemname>
+        <itemnumber>16864</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578255172</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Whoopwhoop</player>
+        <itemname>Armschienen der Macht</itemname>
+        <itemnumber>16861</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578255114</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nitewolf</player>
+        <itemname>Handschuhe des Riesenjägers</itemname>
+        <itemnumber>16852</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578255007</timestamp>
+        <cost>-202</cost>
+    </lootentry>
+    <lootentry>
+        <player>Shíbuya</player>
+        <itemname>Stiefel der Prophezeiung</itemname>
+        <itemnumber>16811</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578254968</timestamp>
+        <cost>-140</cost>
+    </lootentry>
+    <lootentry>
+        <player>Pvpgotthans</player>
+        <itemname>Stiefel des Nachtmeuchlers</itemname>
+        <itemnumber>16824</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578254658</timestamp>
+        <cost>-103</cost>
+    </lootentry>
+    <lootentry>
+        <player>Captncaps</player>
+        <itemname>Handschuhe des Riesenjägers</itemname>
+        <itemnumber>16852</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1578254619</timestamp>
+        <cost>-69</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxy</player>
+        <itemname>Gürtel des Nachtmeuchlers</itemname>
+        <itemnumber>16827</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1578254431</timestamp>
+        <cost>-100</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxy</player>
+        <itemname>Armreifen des Nachtmeuchlers</itemname>
+        <itemnumber>16825</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1578254220</timestamp>
+        <cost>-60</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ramschazar</player>
+        <itemname>Mana entfachende Kordel</itemname>
+        <itemnumber>19136</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1578254109</timestamp>
+        <cost>-187</cost>
+    </lootentry>
+    <lootentry>
+        <player>Stroboaik</player>
+        <itemname>Mantel des Arkanisten</itemname>
+        <itemnumber>16797</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1578254070</timestamp>
+        <cost>-60</cost>
+    </lootentry>
+    <lootentry>
+        <player>Jetlee</player>
+        <itemname>Reif der Prophezeiung</itemname>
+        <itemnumber>16813</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578253887</timestamp>
+        <cost>-36</cost>
+    </lootentry>
+    <lootentry>
+        <player>Tyshea</player>
+        <itemname>Unbarmherzige Klinge</itemname>
+        <itemnumber>18832</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578253807</timestamp>
+        <cost>-366</cost>
+    </lootentry>
+    <lootentry>
+        <player>Drleary</player>
+        <itemname>Talisman der ephemeren Macht</itemname>
+        <itemnumber>18820</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578253649</timestamp>
+        <cost>-246</cost>
+    </lootentry>
+    <lootentry>
+        <player>Olof</player>
+        <itemname>Drillbohrer-Scheibe</itemname>
+        <itemnumber>17066</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578253607</timestamp>
+        <cost>-300</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ramschazar</player>
+        <itemname>Teufelsherzhörner</itemname>
+        <itemnumber>16808</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1578253567</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Gabriol</player>
+        <itemname>Sabatons der Macht</itemname>
+        <itemnumber>16862</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1578253123</timestamp>
+        <cost>-2</cost>
+    </lootentry>
+    <lootentry>
+        <player>Bîmbâm</player>
+        <itemname>Handschuhe des Nachtmeuchlers</itemname>
+        <itemnumber>16826</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1578253084</timestamp>
+        <cost>-169</cost>
+    </lootentry>
+    <lootentry>
+        <player>Drleary</player>
+        <itemname>Bindungen des Arkanisten</itemname>
+        <itemnumber>16799</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1578252991</timestamp>
+        <cost>-55</cost>
+    </lootentry>
+    <lootentry>
+        <player>Badabou</player>
+        <itemname>Feuerschuppenbeinplatten</itemname>
+        <itemnumber>18861</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1578252863</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Cimino</player>
+        <itemname>Hose des Nachtmeuchlers</itemname>
+        <itemnumber>16822</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578252481</timestamp>
+        <cost>-212</cost>
+    </lootentry>
+    <lootentry>
+        <player>Darkegel</player>
+        <itemname>Erderschütterer</itemname>
+        <itemnumber>17073</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578252445</timestamp>
+        <cost>-25</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nitewolf</player>
+        <itemname>Gamaschen des Riesenjägers</itemname>
+        <itemnumber>16847</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578252404</timestamp>
+        <cost>-221</cost>
+    </lootentry>
+    <lootentry>
+        <player>Sinslegend</player>
+        <itemname>Schläger-Mal</itemname>
+        <itemnumber>17069</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578252370</timestamp>
+        <cost>-201</cost>
+    </lootentry>
+    <lootentry>
+        <player>Vinofred</player>
+        <itemname>Talisman der ephemeren Macht</itemname>
+        <itemnumber>18820</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578252331</timestamp>
+        <cost>-254</cost>
+    </lootentry>
+    <lootentry>
+        <player>Badabou</player>
+        <itemname>Beinplatten der Gerechtigkeit</itemname>
+        <itemnumber>16855</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1578252290</timestamp>
+        <cost>-6</cost>
+    </lootentry>
+    <lootentry>
+        <player>Furbsn</player>
+        <itemname>Handgelenksschutz der Stabilität</itemname>
+        <itemnumber>19146</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1578252122</timestamp>
+        <cost>-151</cost>
+    </lootentry>
+    <lootentry>
+        <player>Magice</player>
+        <itemname>Halsschmuck der Erleuchtung</itemname>
+        <itemnumber>17109</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1578252086</timestamp>
+        <cost>-181</cost>
+    </lootentry>
+    <lootentry>
+        <player>Recret</player>
+        <itemname>Stulpen der Macht</itemname>
+        <itemnumber>16863</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1578251969</timestamp>
+        <cost>-70</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nebyulah</player>
+        <itemname>Stiefel des Cenarius</itemname>
+        <itemnumber>16829</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1578251924</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Murtarim</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250806</timestamp>
+        <cost>-51</cost>
+    </lootentry>
+    <lootentry>
+        <player>Kuzmitch</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250774</timestamp>
+        <cost>-89</cost>
+    </lootentry>
+    <lootentry>
+        <player>Jowblob</player>
+        <itemname>Onyxias Kopf</itemname>
+        <itemnumber>18423</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250767</timestamp>
+        <cost>-157</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ibutec</player>
+        <itemname>Onyxias Kopf</itemname>
+        <itemnumber>18423</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250735</timestamp>
+        <cost>-171</cost>
+    </lootentry>
+    <lootentry>
+        <player>Namisha</player>
+        <itemname>Heiligenschein der Erhabenheit</itemname>
+        <itemnumber>16921</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250692</timestamp>
+        <cost>-252</cost>
+    </lootentry>
+    <lootentry>
+        <player>Pvpgottrolf</player>
+        <itemname>Helm des Drachenjägers</itemname>
+        <itemnumber>16939</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250678</timestamp>
+        <cost>-35</cost>
+    </lootentry>
+    <lootentry>
+        <player>Kevmantheman</player>
+        <itemname>Helm des Drachenjägers</itemname>
+        <itemnumber>16939</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250656</timestamp>
+        <cost>-222</cost>
+    </lootentry>
+    <lootentry>
+        <player>Pvpgotthans</player>
+        <itemname>Blutfangkapuze</itemname>
+        <itemnumber>16908</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250635</timestamp>
+        <cost>-202</cost>
+    </lootentry>
+    <lootentry>
+        <player>Aywen</player>
+        <itemname>Eskhandars Halsband</itemname>
+        <itemnumber>18205</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250619</timestamp>
+        <cost>-5</cost>
+    </lootentry>
+    <lootentry>
+        <player>Drleary</player>
+        <itemname>Zauberfoliant des uralten Grundsteins</itemname>
+        <itemnumber>17067</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1578250596</timestamp>
+        <cost>-36</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxion</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577906941</timestamp>
+        <cost>-80</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxy</player>
+        <itemname>Onyxias Kopf</itemname>
+        <itemnumber>18423</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577906877</timestamp>
+        <cost>-150</cost>
+    </lootentry>
+    <lootentry>
+        <player>Lycaria</player>
+        <itemname>Helm des Drachenjägers</itemname>
+        <itemnumber>16939</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577906685</timestamp>
+        <cost>-33</cost>
+    </lootentry>
+    <lootentry>
+        <player>Diazlite</player>
+        <itemname>Ring der Bindung</itemname>
+        <itemnumber>18813</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577906633</timestamp>
+        <cost>-3</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nickel</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577905909</timestamp>
+        <cost>-89</cost>
+    </lootentry>
+    <lootentry>
+        <player>Zapzzarap</player>
+        <itemname>Onyxias Kopf</itemname>
+        <itemnumber>18423</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577905859</timestamp>
+        <cost>-213</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ðøpe</player>
+        <itemname>Krone des Richturteils</itemname>
+        <itemnumber>16955</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577905814</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Fritt</player>
+        <itemname>Blutfangkapuze</itemname>
+        <itemnumber>16908</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577905774</timestamp>
+        <cost>-205</cost>
+    </lootentry>
+    <lootentry>
+        <player>Aywen</player>
+        <itemname>Ring der Bindung</itemname>
+        <itemnumber>18813</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577905737</timestamp>
+        <cost>-36</cost>
+    </lootentry>
+    <lootentry>
+        <player>Schill</player>
+        <itemname>Halsschmuck des Feuerlords</itemname>
+        <itemnumber>18814</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577658189</timestamp>
+        <cost>-509</cost>
+    </lootentry>
+    <lootentry>
+        <player>Lycaria</player>
+        <itemname>Beinschützer des Drachenjägers</itemname>
+        <itemnumber>16938</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577658113</timestamp>
+        <cost>-397</cost>
+    </lootentry>
+    <lootentry>
+        <player>Zapzzarap</player>
+        <itemname>Rückgratschnitter</itemname>
+        <itemnumber>17104</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577658075</timestamp>
+        <cost>-4</cost>
+    </lootentry>
+    <lootentry>
+        <player>Joediehoe</player>
+        <itemname>Gurt des Ansturms</itemname>
+        <itemnumber>19137</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577658028</timestamp>
+        <cost>-250</cost>
+    </lootentry>
+    <lootentry>
+        <player>Gabriol</player>
+        <itemname>Beinplatten des Zorns</itemname>
+        <itemnumber>16962</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577657991</timestamp>
+        <cost>-2</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nitewolf</player>
+        <itemname>Handgelenksschutz des wahren Flugs</itemname>
+        <itemnumber>18812</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1577656786</timestamp>
+        <cost>-37</cost>
+    </lootentry>
+    <lootentry>
+        <player>Aywen</player>
+        <itemname>Brandwachenschultern</itemname>
+        <itemnumber>19139</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1577656749</timestamp>
+        <cost>-123</cost>
+    </lootentry>
+    <lootentry>
+        <player>Genature</player>
+        <itemname>Stab der Dominanz</itemname>
+        <itemnumber>18842</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1577656255</timestamp>
+        <cost>-341</cost>
+    </lootentry>
+    <lootentry>
+        <player>Iseral</player>
+        <itemname>Teufelsherzroben</itemname>
+        <itemnumber>16809</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1577656216</timestamp>
+        <cost>-55</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nitewolf</player>
+        <itemname>Schulterklappen des Riesenjägers</itemname>
+        <itemnumber>16848</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1577655545</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Hôlywarrior</player>
+        <itemname>Salamanderschuppengamaschen</itemname>
+        <itemnumber>18875</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1577655509</timestamp>
+        <cost>-102</cost>
+    </lootentry>
+    <lootentry>
+        <player>Marole</player>
+        <itemname>Blutfanghose</itemname>
+        <itemnumber>16909</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577655374</timestamp>
+        <cost>-305</cost>
+    </lootentry>
+    <lootentry>
+        <player>Gaganto</player>
+        <itemname>Beinplatten des Richturteils</itemname>
+        <itemnumber>16954</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577655335</timestamp>
+        <cost>-151</cost>
+    </lootentry>
+    <lootentry>
+        <player>Bøunz</player>
+        <itemname>Krone der Zerstörung</itemname>
+        <itemnumber>18817</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577655289</timestamp>
+        <cost>-2</cost>
+    </lootentry>
+    <lootentry>
+        <player>Olof</player>
+        <itemname>Drachenblut-Cape</itemname>
+        <itemnumber>17107</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Ragnaros</boss>
+        <timestamp>1577655219</timestamp>
+        <cost>-120</cost>
+    </lootentry>
+    <lootentry>
+        <player>Dukay</player>
+        <itemname>Unterarmschienen der Prophezeiung</itemname>
+        <itemnumber>16819</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1577654754</timestamp>
+        <cost>-150</cost>
+    </lootentry>
+    <lootentry>
+        <player>Pîmpîne</player>
+        <itemname>Bindungen des Arkanisten</itemname>
+        <itemnumber>16799</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1577654749</timestamp>
+        <cost>-55</cost>
+    </lootentry>
+    <lootentry>
+        <player>Rexmo</player>
+        <itemname>Das Auge der Offenbarung</itemname>
+        <itemnumber>18646</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1577654562</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Asfali</player>
+        <itemname>Finkles Lavagreifer</itemname>
+        <itemnumber>18803</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1577654510</timestamp>
+        <cost>-5</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ginju</player>
+        <itemname>Schärpe der geflüsterten Geheimnisse</itemname>
+        <itemnumber>18809</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Majordomus Exekutus</boss>
+        <timestamp>1577654469</timestamp>
+        <cost>-67</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nitewolf</player>
+        <itemname>Gürtel des Riesenjägers</itemname>
+        <itemnumber>16851</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1577654329</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Cimino</player>
+        <itemname>Stiefel des Nachtmeuchlers</itemname>
+        <itemnumber>16824</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1577654083</timestamp>
+        <cost>-181</cost>
+    </lootentry>
+    <lootentry>
+        <player>Kuzmitch</player>
+        <itemname>Handschuhe des Arkanisten</itemname>
+        <itemnumber>16801</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1577654047</timestamp>
+        <cost>-120</cost>
+    </lootentry>
+    <lootentry>
+        <player>Fergono</player>
+        <itemname>Stab der Dominanz</itemname>
+        <itemnumber>18842</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1577654014</timestamp>
+        <cost>-717</cost>
+    </lootentry>
+    <lootentry>
+        <player>Lauret</player>
+        <itemname>Roben des Arkanisten</itemname>
+        <itemnumber>16798</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1577653971</timestamp>
+        <cost>-25</cost>
+    </lootentry>
+    <lootentry>
+        <player>Qny</player>
+        <itemname>Brustschutz der Gerechtigkeit</itemname>
+        <itemnumber>16853</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Golemagg der Verbrenner</boss>
+        <timestamp>1577653927</timestamp>
+        <cost>-145</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ascadia</player>
+        <itemname>Gürtel des Arkanisten</itemname>
+        <itemnumber>16802</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1577653742</timestamp>
+        <cost>-13</cost>
+    </lootentry>
+    <lootentry>
+        <player>Zapzzarap</player>
+        <itemname>Ring des rasanten Schlags</itemname>
+        <itemnumber>18821</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1577653436</timestamp>
+        <cost>-257</cost>
+    </lootentry>
+    <lootentry>
+        <player>Káhli</player>
+        <itemname>Siegel des Erzmagiers</itemname>
+        <itemnumber>17110</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1577653400</timestamp>
+        <cost>-56</cost>
+    </lootentry>
+    <lootentry>
+        <player>Penalism</player>
+        <itemname>Schulterstücke der Macht</itemname>
+        <itemnumber>16868</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1577653375</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Pvpgottrolf</player>
+        <itemname>Schulterklappen des Riesenjägers</itemname>
+        <itemnumber>16848</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Sulfuronherold</boss>
+        <timestamp>1577653326</timestamp>
+        <cost>-245</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nohsi</player>
+        <itemname>Stiefel des Nachtmeuchlers</itemname>
+        <itemnumber>16824</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1577652365</timestamp>
+        <cost>-125</cost>
+    </lootentry>
+    <lootentry>
+        <player>Stroboaik</player>
+        <itemname>Handschuhe des Arkanisten</itemname>
+        <itemnumber>16801</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Shazzrah</boss>
+        <timestamp>1577652324</timestamp>
+        <cost>-65</cost>
+    </lootentry>
+    <lootentry>
+        <player>Dukay</player>
+        <itemname>Gurt der Prophezeiung</itemname>
+        <itemnumber>16817</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1577651398</timestamp>
+        <cost>-104</cost>
+    </lootentry>
+    <lootentry>
+        <player>Zapzzarap</player>
+        <itemname>Helm der Macht</itemname>
+        <itemnumber>16866</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1577651340</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Hôlywarrior</player>
+        <itemname>Aurastein-Hammer</itemname>
+        <itemnumber>17105</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1577651304</timestamp>
+        <cost>-100</cost>
+    </lootentry>
+    <lootentry>
+        <player>Dägga</player>
+        <itemname>Kopfschutz des Nachtmeuchlers</itemname>
+        <itemnumber>16821</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1577651238</timestamp>
+        <cost>-55</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxion</player>
+        <itemname>Schiftung der Gerechtigkeit</itemname>
+        <itemnumber>16856</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1577651136</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Vinofred</player>
+        <itemname>Teufelsherzschulterpolster</itemname>
+        <itemnumber>16807</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Baron Geddon</boss>
+        <timestamp>1577651098</timestamp>
+        <cost>-123</cost>
+    </lootentry>
+    <lootentry>
+        <player>Stroboaik</player>
+        <itemname>Gürtel des Arkanisten</itemname>
+        <itemnumber>16802</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1577650669</timestamp>
+        <cost>-40</cost>
+    </lootentry>
+    <lootentry>
+        <player>Danyna</player>
+        <itemname>Räuderipper</itemname>
+        <itemnumber>17071</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1577650299</timestamp>
+        <cost>-250</cost>
+    </lootentry>
+    <lootentry>
+        <player>Jowblob</player>
+        <itemname>Unbarmherzige Klinge</itemname>
+        <itemnumber>18832</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1577650259</timestamp>
+        <cost>-350</cost>
+    </lootentry>
+    <lootentry>
+        <player>Káhli</player>
+        <itemname>Zauberdolch</itemname>
+        <itemnumber>18878</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1577650257</timestamp>
+        <cost>-110</cost>
+    </lootentry>
+    <lootentry>
+        <player>Thamos</player>
+        <itemname>Helm des Riesenjägers</itemname>
+        <itemnumber>16846</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Garr</boss>
+        <timestamp>1577650217</timestamp>
+        <cost>-121</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ramschazar</player>
+        <itemname>Zauberdolch</itemname>
+        <itemnumber>18878</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1577649666</timestamp>
+        <cost>-132</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxion</player>
+        <itemname>Stulpen der Gerechtigkeit</itemname>
+        <itemnumber>16860</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Gehennas</boss>
+        <timestamp>1577649622</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nynea</player>
+        <itemname>Hose der Prophezeiung</itemname>
+        <itemnumber>16814</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1577649192</timestamp>
+        <cost>-80</cost>
+    </lootentry>
+    <lootentry>
+        <player>Klaibo</player>
+        <itemname>Talisman der ephemeren Macht</itemname>
+        <itemnumber>18820</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1577649153</timestamp>
+        <cost>-265</cost>
+    </lootentry>
+    <lootentry>
+        <player>Zapzzarap</player>
+        <itemname>Beinplatten der Macht</itemname>
+        <itemnumber>16867</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1577649116</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Joediehoe</player>
+        <itemname>Stiefel der Gerechtigkeit</itemname>
+        <itemnumber>16859</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1577648689</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Káhli</player>
+        <itemname>Teufelsherzhandschuhe</itemname>
+        <itemnumber>16805</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1577648652</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nickel</player>
+        <itemname>Mana entfachende Kordel</itemname>
+        <itemnumber>19136</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1577648549</timestamp>
+        <cost>-156</cost>
+    </lootentry>
+    <lootentry>
+        <player>Rexmo</player>
+        <itemname>Hose der Prophezeiung</itemname>
+        <itemnumber>16814</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Magmadar</boss>
+        <timestamp>1577648502</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nebyulah</player>
+        <itemname>Schwerer Dunkeleisenring</itemname>
+        <itemnumber>18879</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1577648059</timestamp>
+        <cost>-5</cost>
+    </lootentry>
+    <lootentry>
+        <player>Nickel</player>
+        <itemname>Halsschmuck der Erleuchtung</itemname>
+        <itemnumber>17109</itemnumber>
+        <zone>Geschmolzener Kern</zone>
+        <boss>Lucifron</boss>
+        <timestamp>1577648015</timestamp>
+        <cost>-91</cost>
+    </lootentry>
+    <lootentry>
+        <player>Joediehoe</player>
+        <itemname>Armschienen der Gerechtigkeit</itemname>
+        <itemnumber>16857</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577647999</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ibutec</player>
+        <itemname>Gürtel des Riesenjägers</itemname>
+        <itemnumber>16851</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577647914</timestamp>
+        <cost>-31</cost>
+    </lootentry>
+    <lootentry>
+        <player>Thamos</player>
+        <itemname>Armschienen des Riesenjägers</itemname>
+        <itemnumber>16850</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577647227</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Lycaria</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646973</timestamp>
+        <cost>-44</cost>
+    </lootentry>
+    <lootentry>
+        <player>Magice</player>
+        <itemname>Onyxias Kopf</itemname>
+        <itemnumber>18423</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646933</timestamp>
+        <cost>-191</cost>
+    </lootentry>
+    <lootentry>
+        <player>Furbsn</player>
+        <itemname>Bedeckung des Stormrage</itemname>
+        <itemnumber>16900</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646818</timestamp>
+        <cost>-1</cost>
+    </lootentry>
+    <lootentry>
+        <player>Magice</player>
+        <itemname>Krone des Netherwinds</itemname>
+        <itemnumber>16914</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646777</timestamp>
+        <cost>-90</cost>
+    </lootentry>
+    <lootentry>
+        <player>Breakingnät</player>
+        <itemname>Eskhandars Halsband</itemname>
+        <itemnumber>18205</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646730</timestamp>
+        <cost>-80</cost>
+    </lootentry>
+    <lootentry>
+        <player>Xeptor</player>
+        <itemname>Onyxias Kopf</itemname>
+        <itemnumber>18423</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646655</timestamp>
+        <cost>-111</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxion</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646615</timestamp>
+        <cost>-102</cost>
+    </lootentry>
+    <lootentry>
+        <player>Noxxion</player>
+        <itemname>Rucksack aus Onyxias Haut</itemname>
+        <itemnumber>17966</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646576</timestamp>
+        <cost>-101</cost>
+    </lootentry>
+    <lootentry>
+        <player>Lauret</player>
+        <itemname>Krone des Netherwinds</itemname>
+        <itemnumber>16914</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646522</timestamp>
+        <cost>-78</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ramschazar</player>
+        <itemname>Schädelkappe der Nemesis</itemname>
+        <itemnumber>16929</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646482</timestamp>
+        <cost>-76</cost>
+    </lootentry>
+    <lootentry>
+        <player>Ascadia</player>
+        <itemname>Saphirontuch</itemname>
+        <itemnumber>17078</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577646432</timestamp>
+        <cost>-220</cost>
+    </lootentry>
+    <lootentry>
+        <player>Schill</player>
+        <itemname>Krone des Netherwinds</itemname>
+        <itemnumber>16914</itemnumber>
+        <zone>Onyxias Versteck</zone>
+        <boss>Onyxia</boss>
+        <timestamp>1577042045</timestamp>
+        <cost>111</cost>
+    </lootentry>
+</loothistory>

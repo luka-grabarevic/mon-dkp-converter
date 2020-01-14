@@ -1,0 +1,498 @@
+<raidlog>
+	<head>
+		<export>
+			<name>EQdkp Plus XML</name>
+			<version>1.0</version>
+		</export>
+		<tracker>
+			<name>Mizus RaidTracker</name>
+			<version>v0.84.4-classic</version>
+		</tracker>
+		<gameinfo>
+			<game>World of Warcraft</game>
+			<language>deDE</language>
+			<charactername>Kimbrimage</charactername>
+		</gameinfo>
+	</head>
+	<raiddata>
+		<zones>
+			<zone>
+				<enter>1578855253</enter>
+				<leave>1578855992</leave>
+				<name>Ony</name>
+				<difficulty>16</difficulty>
+			</zone>
+		</zones>
+		<bosskills>
+			<bosskill>
+				<name>Onyxia</name>
+				<time>1578855562</time>
+				<difficulty>9</difficulty>
+			</bosskill>
+		</bosskills>
+		<members>
+			<member>
+				<name>Amelie</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>DRUID</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Ascadia</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>MAGE</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Asfali</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>DRUID</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Asunasan</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>PRIEST</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Badabou</name>
+				<race>Human</race>
+				<sex>2</sex>
+				<class>PALADIN</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Bøunz</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>HUNTER</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Diazlite</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Dukay</name>
+				<race>Dwarf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>PRIEST</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Exotic</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>ROGUE</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Fergono</name>
+				<race>Gnome</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>WARLOCK</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Gaganto</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>PALADIN</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Ginju</name>
+				<race>Gnome</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>WARLOCK</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Hellming</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Jowblob</name>
+				<race>Gnome</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Kimbrimage</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>MAGE</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Kühltruhe</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>PRIEST</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Lauret</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>MAGE</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Lerix</name>
+				<race>Human</race>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Lycaria</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>HUNTER</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Marole</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>ROGUE</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Murtarim</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>PRIEST</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Nebyulah</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>DRUID</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Nickel</name>
+				<race>Gnome</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>MAGE</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Noxxion</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>PALADIN</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Olof</name>
+				<race>Dwarf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Penalism</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Pvpgotthans</name>
+				<race>Gnome</race>
+				<sex>2</sex>
+				<class>ROGUE</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Pvpgottrolf</name>
+				<race>Dwarf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>HUNTER</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Qny</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>PALADIN</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Ramschazar</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>WARLOCK</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Recret</name>
+				<race>Human</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>WARRIOR</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Rexmo</name>
+				<race>Dwarf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>2</sex>
+				<class>PRIEST</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Sinslegend</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>WARRIOR</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Snowblood</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>ROGUE</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Vinofred</name>
+				<race>Gnome</race>
+				<sex>2</sex>
+				<class>WARLOCK</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+			<member>
+				<name>Wurstmitsenf</name>
+				<race>NightElf</race>
+				<guild>Einmal mit Profis</guild>
+				<sex>3</sex>
+				<class>HUNTER</class>
+				<level>60</level>
+				<times>
+					<time type='join'>1578855253</time>
+					<time type='leave'>1578855992</time>
+				</times>
+			</member>
+		</members>
+		<items>
+			<item>
+				<name>Zauberfoliant des uralten Grundsteins</name>
+				<time>1578855654</time>
+				<member>Asfali</member>
+				<itemid>17067::::::::60:::::::</itemid>
+				<cost>40</cost>
+				<boss>Onyxia</boss>
+			</item>
+			<item>
+				<name>Heiligenschein der Erhabenheit</name>
+				<time>1578855701</time>
+				<member>Rexmo</member>
+				<itemid>16921::::::::60:::::::</itemid>
+				<cost>51</cost>
+				<boss>Onyxia</boss>
+			</item>
+			<item>
+				<name>Blutfangkapuze</name>
+				<time>1578855750</time>
+				<member>Snowblood</member>
+				<itemid>16908::::::::60:::::::</itemid>
+				<cost>67</cost>
+				<boss>Onyxia</boss>
+			</item>
+			<item>
+				<name>Onyxias Kopf</name>
+				<time>1578855901</time>
+				<member>Lycaria</member>
+				<itemid>18423::::::::60:::::::</itemid>
+				<cost>167</cost>
+				<boss>Onyxia</boss>
+			</item>
+		</items>
+	</raiddata>
+</raidlog>
