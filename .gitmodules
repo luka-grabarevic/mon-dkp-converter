@@ -1,0 +1,3 @@
+[submodule "libs/misc-raidlog_xml_schema"]
+	path = libs/misc-raidlog_xml_schema
+	url = git://github.com/EQdkpPlus/misc-raidlog_xml_schema.git
