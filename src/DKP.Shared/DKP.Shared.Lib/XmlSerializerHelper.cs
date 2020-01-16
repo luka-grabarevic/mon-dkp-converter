@@ -9,7 +9,7 @@ namespace DKP.Shared.Lib
 {
     public static class XmlSerializerHelper
     {
-        public static Object Deserialize<T>(String xmlString)
+        public static T Deserialize<T>(String xmlString)
         {
             if (String.IsNullOrWhiteSpace(xmlString))
             {

@@ -7,11 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="SampleData\EQdkp-sample.xml" />
+    <None Remove="SampleData\mon-dkp-history.xml" />
+    <None Remove="SampleData\mon-dkp.xml" />
+    <None Remove="SampleData\mon-loot-history.xml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="SampleData\EQdkp-sample.xml">
+    <Content Include="SampleData\mon-dkp-history.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\mon-dkp.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\mon-loot-history.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -21,6 +29,10 @@
     <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
     <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
     <PackageReference Include="coverlet.collector" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DKP.Data.MonDKP.Lib\DKP.Data.MonDKP.Lib.csproj" />
   </ItemGroup>
 
 </Project>
