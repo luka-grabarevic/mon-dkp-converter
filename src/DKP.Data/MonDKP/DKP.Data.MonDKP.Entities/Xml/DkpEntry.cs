@@ -1,11 +1,19 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Xml.Serialization;
 
-namespace DKP.Data.MonDKP.Entities
+namespace DKP.Data.MonDKP.Entities.Xml
 {
+    // ReSharper disable once UseNameofExpression
+    [DebuggerDisplay("{ToString()}")]
     [XmlType("dkpentry")]
-    public class DKPEntry
+    public class DkpEntry
     {
+        public override String ToString()
+        {
+            return $"{Player}, {Class}, DKP={Dkp}, Gained={LifetimeGained}, Spent={LifetimeSpent}";
+        }
+
         [XmlElement("player")]
         public String Player { get; set; }
 
@@ -16,7 +24,7 @@ namespace DKP.Data.MonDKP.Entities
         public Int32 LifetimeGained { get; set; }
 
         [XmlElement("dkp")]
-        public Int32 DKP { get; set; }
+        public Int32 Dkp { get; set; }
 
         [XmlElement("lifetimespent")]
         public Int32 LifetimeSpent { get; set; }
