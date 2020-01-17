@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-namespace DKP.Data.MonDKP.Entities.Xml
+namespace DKP.Data.MonDKP.Entities
 {
     // ReSharper disable once UseNameofExpression
     [DebuggerDisplay("{ToString()}")]

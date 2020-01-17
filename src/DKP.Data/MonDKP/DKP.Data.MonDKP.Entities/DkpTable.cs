@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace DKP.Data.MonDKP.Entities.Xml
+namespace DKP.Data.MonDKP.Entities
 {
     [XmlType("dkptable")]
     public class DkpTable

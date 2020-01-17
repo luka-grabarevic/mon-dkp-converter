@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Linq;
-using DKP.Data.MonDKP.Entities.Xml;
+using DKP.Data.MonDKP.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DKP.Data.MonDKP.Lib.Tests
@@ -15,13 +15,13 @@ namespace DKP.Data.MonDKP.Lib.Tests
         private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP.lua";
 
         /// <summary>
-        /// Test if the MonDKP lua file can be loaded into objects properly.
+        /// Test if the MonDKP database lua file can be loaded into objects properly.
         /// </summary>
         [TestMethod]
         [DeploymentItem(SampleDataMonDkpLua)]
-        public void LuaFileCanBeLoaded()
+        public void MonDkpDatabaseCanBeLoaded()
         {
-            var result = MonDkpFileLoader.LoadLuaData(SampleDataMonDkpLua);
+            var result = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
         }
 
         /// <summary>
