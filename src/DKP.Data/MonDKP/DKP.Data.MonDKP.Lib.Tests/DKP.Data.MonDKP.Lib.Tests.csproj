@@ -10,6 +10,7 @@
     <None Remove="SampleData\mon-dkp-history.xml" />
     <None Remove="SampleData\mon-dkp.xml" />
     <None Remove="SampleData\mon-loot-history.xml" />
+    <None Remove="SampleData\MonolithDKP.lua" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="SampleData\mon-loot-history.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\MonolithDKP.lua">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

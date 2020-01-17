@@ -7,19 +7,28 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DKP.Data.MonDKP.Lib.Tests
 {
     [TestClass]
-    [DeploymentItem(SampleDataMonDkpXml)]
-    [DeploymentItem(SampleDataMonDkpHistoryXml)]
-    [DeploymentItem(SampleDataMonDkpLootHistoryXml)]
     public class MonDkpFileLoaderTests
     {
         private const String SampleDataMonDkpXml = @"SampleData\mon-dkp.xml";
         private const String SampleDataMonDkpHistoryXml = @"SampleData\mon-dkp-history.xml";
         private const String SampleDataMonDkpLootHistoryXml = @"SampleData\mon-loot-history.xml";
+        private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP.lua";
+
+        /// <summary>
+        /// Test if the MonDKP lua file can be loaded into objects properly.
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(SampleDataMonDkpLua)]
+        public void LuaFileCanBeLoaded()
+        {
+            var result = MonDkpFileLoader.LoadLuaData(SampleDataMonDkpLua);
+        }
 
         /// <summary>
         /// Test if the MonDKP LootHistory can be loaded into objects properly.
         /// </summary>
         [TestMethod]
+        [DeploymentItem(SampleDataMonDkpLootHistoryXml)]
         public void LootHistoryXmlCanBeLoaded()
         {
             var result = MonDkpFileLoader.LoadLootHistory(SampleDataMonDkpLootHistoryXml);
@@ -44,6 +53,7 @@ namespace DKP.Data.MonDKP.Lib.Tests
         /// Test if the MonDKP DKPHistory can be loaded into objects properly.
         /// </summary>
         [TestMethod]
+        [DeploymentItem(SampleDataMonDkpHistoryXml)]
         public void DkpHistoryXmlCanBeLoaded()
         {
             var result = MonDkpFileLoader.LoadDkpHistory(SampleDataMonDkpHistoryXml);
@@ -66,6 +76,7 @@ namespace DKP.Data.MonDKP.Lib.Tests
         /// Tests if the MonDKP DKPTable xml can be loaded into objects properly.
         /// </summary>
         [TestMethod]
+        [DeploymentItem(SampleDataMonDkpXml)]
         public void DkpTableXmlCanBeLoaded()
         {
             var result = MonDkpFileLoader.LoadDkpTable(SampleDataMonDkpXml);

@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NLua" Version="1.4.26" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\DKP.Shared\DKP.Shared.Lib\DKP.Shared.Lib.csproj" />
     <ProjectReference Include="..\DKP.Data.MonDKP.Entities\DKP.Data.MonDKP.Entities.csproj" />
   </ItemGroup>
