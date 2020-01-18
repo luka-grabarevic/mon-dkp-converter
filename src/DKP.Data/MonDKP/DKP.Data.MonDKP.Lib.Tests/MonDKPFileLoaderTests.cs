@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using DKP.Data.MonDKP.Entities;
@@ -13,6 +14,93 @@ namespace DKP.Data.MonDKP.Lib.Tests
         private const String SampleDataMonDkpHistoryXml = @"SampleData\mon-dkp-history.xml";
         private const String SampleDataMonDkpLootHistoryXml = @"SampleData\mon-loot-history.xml";
         private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP.lua";
+
+        [TestMethod]
+        [DeploymentItem(SampleDataMonDkpLua)]
+        public void CheckIfDataSumsUp()
+        {
+            var database = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
+
+            var result =
+                CheckDataConsistency(database, database.DkpTable.DkpEntries.Select(a => a.Player));
+
+            var grpByPlayer = result.GroupBy(a => a.Player);
+            foreach (var grp in grpByPlayer)
+            {
+                Debug.WriteLine($"# {grp.Key}");
+                foreach (var mismatchedData in grp)
+                {
+                    LogSumMismatches(mismatchedData.Type.ToString(), mismatchedData.Expected, mismatchedData.Actual);
+                }
+            }
+        }
+
+
+        private void LogSumMismatches(String title, Int32 expected, Int32 actual)
+        {
+            Debug.WriteLine($"{title}: Expected={expected}, Actual={actual}, Diff={expected - actual}");
+        }
+
+        private IEnumerable<MismatchedData> CheckDataConsistency(MonDkpDatabase database, IEnumerable<String> players)
+        {
+            foreach (var player in players)
+            {
+                foreach (var dkpEntry in database.DkpTable.DkpEntries.Where(a => a.Player == player))
+                {
+                    var lootHistoryOfPlayer = database.LootHistory.LootEntries.Where(a => a.Player == player);
+
+                    var dkpHistoryOfPlayer =
+                        database.DkpHistory.HistoryEntries.Where(a => a.Players.Contains(player)).ToList();
+
+                    var gainedDkp = dkpHistoryOfPlayer.Where(a => a.Dkp > 0).Sum(a => a.Dkp);
+                    var lostDkp = dkpHistoryOfPlayer.Where(a => a.Dkp < 0).Sum(a => a.Dkp);
+                    var spentDkp = lootHistoryOfPlayer.Sum(a => a.Cost);
+
+                    if (dkpEntry.LifetimeGained != gainedDkp)
+                    {
+                        yield return new MismatchedData(MismatchedDataType.LifetimeGained, player, dkpEntry.LifetimeGained, gainedDkp);
+                    }
+                    if (dkpEntry.LifetimeSpent != spentDkp)
+                    {
+                        yield return new MismatchedData(MismatchedDataType.LifetimeSpent, player, dkpEntry.LifetimeSpent, spentDkp);
+                    }
+
+                    var actualDkp = gainedDkp + lostDkp + spentDkp;
+                    if (dkpEntry.Dkp != actualDkp)
+                    {
+                        yield return new MismatchedData(MismatchedDataType.DkpNow, player, dkpEntry.Dkp, actualDkp);
+                    }
+                }
+            }
+        }
+
+        private enum MismatchedDataType
+        {
+            DkpNow,
+            LifetimeSpent,
+            LifetimeGained
+        }
+
+        private class MismatchedData
+        {
+            public MismatchedData(MismatchedDataType type, String player, Int32 expected, Int32 actual)
+            {
+                Type = type;
+                Player = player;
+                Expected = expected;
+                Actual = actual;
+            }
+
+            public String Player { get; set; }
+
+            public Int32 Expected { get; set; }
+
+            public Int32 Actual { get; set; }
+
+            public Int32 Diff => Expected - Actual;
+
+            public MismatchedDataType Type { get; set; }
+        }
 
         /// <summary>
         /// Test if the MonDKP database lua file can be loaded into objects properly.
