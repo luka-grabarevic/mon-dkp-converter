@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using DKP.Data.MonDKP.Entities;
 using DKP.Shared.Lib;
 using NLua;
@@ -11,6 +12,9 @@ namespace DKP.Data.MonDKP.Lib
 {
     public static class MonDkpFileLoader
     {
+        private static readonly Regex itemNameRegEx = new Regex("(?<=\\[).+?(?=\\])");
+        private static readonly Regex itemIdRegEx = new Regex("(?<=\\:)[0-9]{5}?(?=\\:)");
+
         public static MonDkpDatabase LoadMonDkpDatabase(String filePath)
         {
             using (var lua = new Lua())
@@ -21,28 +25,75 @@ namespace DKP.Data.MonDKP.Lib
                 lua.DoString(str);
 
                 //var lootTable  = lua.GetTable("MonDKP_Loot");
-                //var dkpTable = lua.GetTable("MonDKP_DKPTable");
-                var dkpHistory = lua.GetTable("MonDKP_DKPHistory");
+                var dkpTable = lua.GetTable("MonDKP_DKPTable");
+
                 var db = new MonDkpDatabase
                 {
-                    History = new DkpHistory
+                    DkpHistory = new DkpHistory
                     {
-                        HistoryEntries = new List<HistoryEntry>()
+                        HistoryEntries = GetDkpHistory(lua).ToList()
+                    },
+                    LootHistory = new LootHistory
+                    {
+                        LootEntries = GetLootHistory(lua).ToList()
+                    },
+                    DkpTable = new DkpTable
+                    {
+                        DkpEntries = GetDkpEntries(lua).ToList()
                     }
                 };
 
-                foreach (var historyValue in dkpHistory.Values.OfType<LuaTable>())
-                {
-                    db.History.HistoryEntries.Add(new HistoryEntry()
-                    {
-                        PlayerString = historyValue["players"].ToString(),
-                        Dkp = Int32.Parse(historyValue["dkp"].ToString()),
-                        Reason = historyValue["reason"].ToString(),
-                        TimeStamp = Int64.Parse(historyValue["date"].ToString())
-                    });
-                }
-
                 return db;
+            }
+        }
+
+        private static IEnumerable<DkpEntry> GetDkpEntries(Lua lua)
+        {
+            var dkpTable = lua.GetTable("MonDKP_DKPTable");
+            foreach (var dkpEntry in dkpTable.Values.OfType<LuaTable>())
+            {
+                yield return new DkpEntry()
+                {
+                    Player = dkpEntry["player"].ToString(),
+                    Dkp = Int32.Parse(dkpEntry["dkp"].ToString()),
+                    LifetimeSpent = Int32.Parse(dkpEntry["lifetime_spent"].ToString()),
+                    LifetimeGained = Int32.Parse(dkpEntry["lifetime_gained"].ToString()),
+                    Class = dkpEntry["class"].ToString(),
+                };
+            }
+        }
+
+        private static IEnumerable<LootEntry> GetLootHistory(Lua lua)
+        {
+            var lootHistory = lua.GetTable("MonDKP_Loot");
+            foreach (var lootValue in lootHistory.Values.OfType<LuaTable>())
+            {
+                var loot = lootValue["loot"].ToString();
+                yield return new LootEntry()
+                {
+                    Player = lootValue["player"].ToString(),
+                    Zone = lootValue["zone"].ToString(),
+                    Boss = lootValue["boss"].ToString(),
+                    Cost = Int32.Parse(lootValue["cost"].ToString()),
+                    TimeStamp = Int64.Parse(lootValue["date"].ToString()),
+                    ItemName = itemNameRegEx.Match(loot).Value,
+                    ItemNumber = int.Parse(itemIdRegEx.Match(loot).Value)
+                };
+            }
+        }
+
+        private static IEnumerable<HistoryEntry> GetDkpHistory(Lua lua)
+        {
+            var dkpHistory = lua.GetTable("MonDKP_DKPHistory");
+            foreach (var historyValue in dkpHistory.Values.OfType<LuaTable>())
+            {
+                yield return new HistoryEntry()
+                {
+                    PlayerString = historyValue["players"].ToString(),
+                    Dkp = Int32.Parse(historyValue["dkp"].ToString()),
+                    Reason = historyValue["reason"].ToString(),
+                    TimeStamp = Int64.Parse(historyValue["date"].ToString())
+                };
             }
         }
 

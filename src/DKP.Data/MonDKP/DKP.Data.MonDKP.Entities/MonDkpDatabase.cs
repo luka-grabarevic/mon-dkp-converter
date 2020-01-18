@@ -2,6 +2,10 @@
 {
     public class MonDkpDatabase
     {
-        public DkpHistory History { get; set; }
+        public DkpHistory DkpHistory { get; set; }
+
+        public LootHistory LootHistory { get; set; }
+
+        public DkpTable DkpTable { get; set; }
     }
 }

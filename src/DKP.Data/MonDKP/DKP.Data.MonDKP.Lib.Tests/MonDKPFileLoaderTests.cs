@@ -22,6 +22,15 @@ namespace DKP.Data.MonDKP.Lib.Tests
         public void MonDkpDatabaseCanBeLoaded()
         {
             var result = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
+
+            Assert.IsNotNull(result);
+            Assert.IsNotNull(result.DkpTable);
+            Assert.IsNotNull(result.LootHistory);
+            Assert.IsNotNull(result.DkpHistory);
+
+            Assert.IsTrue(result.DkpTable.DkpEntries.Any());
+            Assert.IsTrue(result.LootHistory.LootEntries.Any());
+            Assert.IsTrue(result.DkpHistory.HistoryEntries.Any());
         }
 
         /// <summary>

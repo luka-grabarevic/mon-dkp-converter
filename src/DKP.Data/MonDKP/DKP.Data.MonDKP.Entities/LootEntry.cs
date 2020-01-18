@@ -29,7 +29,6 @@ namespace DKP.Data.MonDKP.Entities
         [XmlElement("player")]
         public String Player { get; set; }
 
-
         [XmlElement("timestamp")]
         public Int64 TimeStamp { get; set; }
 

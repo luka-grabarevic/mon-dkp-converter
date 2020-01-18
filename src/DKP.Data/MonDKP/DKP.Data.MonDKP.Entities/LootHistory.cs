@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace DKP.Data.MonDKP.Entities
 {
@@ -6,6 +7,6 @@ namespace DKP.Data.MonDKP.Entities
     public class LootHistory
     {
         [XmlElement("lootentry", typeof(LootEntry))]
-        public LootEntry[] LootEntries { get; set; }
+        public List<LootEntry> LootEntries { get; set; }
     }
 }
