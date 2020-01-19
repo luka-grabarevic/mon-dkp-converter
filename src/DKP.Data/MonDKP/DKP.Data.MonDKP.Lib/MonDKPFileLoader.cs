@@ -13,7 +13,8 @@ namespace DKP.Data.MonDKP.Lib
     public static class MonDkpFileLoader
     {
         private static readonly Regex itemNameRegEx = new Regex("(?<=\\[).+?(?=\\])");
-        private static readonly Regex itemIdRegEx = new Regex("(?<=\\:)[0-9]{5}?(?=\\:)");
+        private static readonly Regex itemNumberRegEx = new Regex("(?<=\\:)[0-9]{5}?(?=\\:)");
+        private static readonly Regex itemIdRegEx = new Regex("(?<=Hitem\\:).+?(?=\\|)");
 
         public static MonDkpDatabase LoadMonDkpDatabase(String filePath)
         {
@@ -77,7 +78,8 @@ namespace DKP.Data.MonDKP.Lib
                     Cost = Int32.Parse(lootValue["cost"].ToString()),
                     TimeStamp = Int64.Parse(lootValue["date"].ToString()),
                     ItemName = itemNameRegEx.Match(loot).Value,
-                    ItemNumber = int.Parse(itemIdRegEx.Match(loot).Value)
+                    ItemNumber = int.Parse(itemNumberRegEx.Match(loot).Value),
+                    ItemId = itemIdRegEx.Match(loot).Value
                 };
             }
         }

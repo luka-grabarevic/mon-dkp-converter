@@ -30,6 +30,6 @@ namespace DKP.Data.MonDKP.Entities
         public String Reason { get; set; }
 
         [XmlIgnore]
-        public DateTimeOffset TimeStampOffset => DateTimeOffset.FromUnixTimeMilliseconds(TimeStamp);
+        public DateTimeOffset TimeStampOffset => DateTimeOffset.FromUnixTimeSeconds(TimeStamp);
     }
 }

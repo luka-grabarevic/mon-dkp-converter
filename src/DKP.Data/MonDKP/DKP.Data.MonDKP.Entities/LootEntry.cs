@@ -36,6 +36,9 @@ namespace DKP.Data.MonDKP.Entities
         public Int32 Cost { get; set; }
 
         [XmlIgnore]
-        public DateTimeOffset TimeStampOffset => DateTimeOffset.FromUnixTimeMilliseconds(TimeStamp);
+        public DateTimeOffset TimeStampOffset => DateTimeOffset.FromUnixTimeSeconds(TimeStamp);
+
+        [XmlIgnore]
+        public String ItemId { get; set; }
     }
 }
