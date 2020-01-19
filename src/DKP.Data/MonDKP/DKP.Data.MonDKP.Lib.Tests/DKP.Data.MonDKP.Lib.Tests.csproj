@@ -10,7 +10,8 @@
     <None Remove="SampleData\mon-dkp-history.xml" />
     <None Remove="SampleData\mon-dkp.xml" />
     <None Remove="SampleData\mon-loot-history.xml" />
-    <None Remove="SampleData\MonolithDKP.lua" />
+    <None Remove="SampleData\MonolithDKP-fixed.lua" />
+    <None Remove="SampleData\MonolithDKP-wrong.lua" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,7 +24,10 @@
     <Content Include="SampleData\mon-loot-history.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="SampleData\MonolithDKP.lua">
+    <Content Include="SampleData\MonolithDKP-fixed.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\MonolithDKP-wrong.lua">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

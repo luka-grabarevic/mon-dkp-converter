@@ -13,7 +13,7 @@ namespace DKP.Data.MonDKP.Lib.Tests
         private const String SampleDataMonDkpXml = @"SampleData\mon-dkp.xml";
         private const String SampleDataMonDkpHistoryXml = @"SampleData\mon-dkp-history.xml";
         private const String SampleDataMonDkpLootHistoryXml = @"SampleData\mon-loot-history.xml";
-        private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP.lua";
+        private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP-fixed.lua";
 
         [TestMethod]
         [DeploymentItem(SampleDataMonDkpLua)]
@@ -22,7 +22,7 @@ namespace DKP.Data.MonDKP.Lib.Tests
             var database = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
 
             var result =
-                CheckDataConsistency(database, database.DkpTable.DkpEntries.Select(a => a.Player));
+                CheckDataConsistency(database, database.DkpTable.DkpEntries.Select(a => a.Player)).ToList();
 
             var grpByPlayer = result.GroupBy(a => a.Player);
             foreach (var grp in grpByPlayer)
@@ -33,6 +33,8 @@ namespace DKP.Data.MonDKP.Lib.Tests
                     LogSumMismatches(mismatchedData.Type.ToString(), mismatchedData.Expected, mismatchedData.Actual);
                 }
             }
+
+            Assert.IsFalse(result.Any());
         }
 
 

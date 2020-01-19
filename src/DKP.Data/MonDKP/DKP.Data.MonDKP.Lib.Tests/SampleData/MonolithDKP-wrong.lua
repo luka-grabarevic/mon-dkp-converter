@@ -41,7 +41,7 @@ MonDKP_DB = {
 	},
 	["bossargs"] = {
 		["CurrentRaidZone"] = "Molten Core",
-		["LastKilledBoss"] = "Ragnaros",
+		["LastKilledBoss"] = "Unterirdisches Dimetrodon",
 		["RecentZones"] = {
 			"Hillsbrad Foothills", -- [1]
 			"Alterac Mountains", -- [2]
@@ -81,8 +81,8 @@ MonDKP_DB = {
 		["DKPHistoryLimit"] = 2500,
 		["AutoOpenBid"] = true,
 		["MonDKPScaleSize"] = 1,
-		["installed210"] = 1578683312,
 		["BidTimerSize"] = 1,
+		["installed210"] = 1578683312,
 		["CurrentGuild"] = {
 			["Kühltruhe-Heartstriker"] = "Einmal mit Profis",
 			["Kühltruhe"] = "Einmal mit Profis",
@@ -122,9 +122,9 @@ MonDKP_DB = {
 		["increment"] = 60,
 		["OnlineOnly"] = false,
 		["SubZeroBidding"] = false,
-		["AntiSnipe"] = 0,
-		["costvalue"] = "Integer",
 		["AllowNegativeBidders"] = false,
+		["costvalue"] = "Integer",
+		["AntiSnipe"] = 0,
 		["AddToNegative"] = false,
 	},
 }
@@ -2506,14 +2506,14 @@ MonDKP_Loot = {
 		["index"] = "Penalism-1577646432",
 	}, -- [264]
 	{
-		["player"] = "Schill",
 		["boss"] = "Onyxia",
+		["player"] = "Schill",
 		["loot"] = "|cffa335ee|Hitem:16914::::::::60:::::::|h[Krone des Netherwinds]|h|r",
-		["zone"] = "Onyxias Versteck",
+		["deletes"] = "Schill-1577041774",
 		["date"] = 1577042045,
 		["cost"] = 111,
 		["index"] = "Schill-1577042045",
-		["deletes"] = "Schill-1577041774",
+		["zone"] = "Onyxias Versteck",
 	}, -- [265]
 	{
 		["player"] = "Murtarim",
@@ -2572,14 +2572,14 @@ MonDKP_Loot = {
 		["boss"] = "Onyxia",
 	}, -- [271]
 	{
-		["zone"] = "Onyxias Versteck",
-		["boss"] = "Onyxia",
-		["loot"] = "|cffa335ee|Hitem:16914::::::::60:::::::|h[Krone des Netherwinds]|h|r",
 		["deletes"] = "Penalism-1577041586",
+		["player"] = "Kimbrimage",
+		["loot"] = "|cffa335ee|Hitem:16914::::::::60:::::::|h[Krone des Netherwinds]|h|r",
+		["zone"] = "Onyxias Versteck",
 		["date"] = 1577041702,
 		["index"] = "Kimbrimage-1577041702",
 		["cost"] = 30,
-		["player"] = "Kimbrimage",
+		["boss"] = "Onyxia",
 	}, -- [272]
 	{
 		["player"] = "Wurstmitsenf",
@@ -6673,16 +6673,52 @@ MonDKP_Loot = {
 		["cost"] = -10,
 		["boss"] = "Lavavernichter",
 	}, -- [726]
-	["seed"] = 0,
+	{
+		["player"] = "Breakingnät",
+		["loot"] = "|cffa335ee|Hitem:18423::::::::60:::::::|h[Onyxias Kopf]|h|r",
+		["zone"] = "Onyxias Versteck",
+		["date"] = 1579126126,
+		["index"] = "Schill-1579126126",
+		["cost"] = -251,
+		["boss"] = "Onyxia",
+	}, -- [727]
+	{
+		["player"] = "Bxdwow",
+		["loot"] = "|cffa335ee|Hitem:16963::::::::60:::::::|h[Helm des Zorns]|h|r",
+		["zone"] = "Onyxias Versteck",
+		["date"] = 1579126087,
+		["index"] = "Schill-1579126087",
+		["cost"] = -5,
+		["boss"] = "Onyxia",
+	}, -- [728]
+	{
+		["player"] = "Aywen",
+		["loot"] = "|cff1eff00|Hitem:17966::::::::60:::::::|h[Rucksack aus Onyxias Haut]|h|r",
+		["zone"] = "Onyxias Versteck",
+		["date"] = 1579126037,
+		["index"] = "Schill-1579126037",
+		["cost"] = -47,
+		["boss"] = "Onyxia",
+	}, -- [729]
+	{
+		["player"] = "Bxdwow",
+		["loot"] = "|cffa335ee|Hitem:18813::::::::60:::::::|h[Ring der Bindung]|h|r",
+		["zone"] = "Onyxias Versteck",
+		["date"] = 1579125931,
+		["index"] = "Schill-1579125931",
+		["cost"] = -1,
+		["boss"] = "Onyxia",
+	}, -- [730]
+	["seed"] = "Schill-1579126126",
 }
 MonDKP_DKPTable = {
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "None",
 		["lifetime_spent"] = -60,
-		["lifetime_gained"] = 385,
+		["lifetime_gained"] = 410,
 		["role"] = "Keine Rolle erkannt",
-		["dkp"] = 325,
+		["dkp"] = 350,
 		["spec"] = "Keine Spezifikation angegeben",
 		["player"] = "Amagedonn",
 		["class"] = "PALADIN",
@@ -6752,12 +6788,12 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Klassenleiter",
 		["class"] = "DRUID",
-		["lifetime_gained"] = 1925,
+		["lifetime_gained"] = 1950,
 		["role"] = "Tank",
-		["lifetime_spent"] = -868,
+		["lifetime_spent"] = -915,
 		["spec"] = "Wilder Kampf (11/33/7)",
 		["player"] = "Aywen",
-		["dkp"] = 1022,
+		["dkp"] = 1000,
 		["rank"] = 3,
 	}, -- [7]
 	{
@@ -6798,9 +6834,9 @@ MonDKP_DKPTable = {
 	}, -- [10]
 	{
 		["previous_dkp"] = 0,
-		["dkp"] = 100,
+		["dkp"] = 125,
 		["lifetime_spent"] = -405,
-		["lifetime_gained"] = 555,
+		["lifetime_gained"] = 580,
 		["player"] = "Barlay",
 		["class"] = "MAGE",
 		["spec"] = "Frost (11/0/40)",
@@ -6812,12 +6848,12 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "PRIEST",
-		["lifetime_gained"] = 1530,
+		["lifetime_gained"] = 1555,
 		["role"] = "Healer",
 		["lifetime_spent"] = -595,
 		["spec"] = "Discipline (36/11/4)",
 		["player"] = "Bellasami",
-		["dkp"] = 930,
+		["dkp"] = 955,
 		["rank"] = 5,
 	}, -- [12]
 	{
@@ -6848,12 +6884,12 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "WARRIOR",
-		["lifetime_gained"] = 1255,
+		["lifetime_gained"] = 1280,
 		["role"] = "Tank",
-		["lifetime_spent"] = -306,
+		["lifetime_spent"] = -557,
 		["spec"] = "Schutz (11/5/35)",
 		["player"] = "Breakingnät",
-		["dkp"] = 873,
+		["dkp"] = 647,
 		["rank"] = 5,
 	}, -- [15]
 	{
@@ -6884,12 +6920,12 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "WARRIOR",
-		["lifetime_gained"] = 725,
+		["lifetime_gained"] = 751,
 		["role"] = "Melee DPS",
-		["lifetime_spent"] = -228,
+		["lifetime_spent"] = -234,
 		["spec"] = "Furor (17/34/0)",
 		["player"] = "Bxdwow",
-		["dkp"] = 257,
+		["dkp"] = 277,
 		["rank"] = 5,
 	}, -- [18]
 	{
@@ -6897,7 +6933,7 @@ MonDKP_DKPTable = {
 		["rankName"] = "Raidmember",
 		["class"] = "ROGUE",
 		["lifetime_gained"] = 480,
-		["role"] = "Nahkampf-DPS",
+		["role"] = "Melee DPS",
 		["lifetime_spent"] = -380,
 		["spec"] = "Kampf (19/32/0)",
 		["player"] = "Bîmbâm",
@@ -6945,7 +6981,7 @@ MonDKP_DKPTable = {
 		["rankName"] = "Gildenleader",
 		["class"] = "ROGUE",
 		["lifetime_gained"] = 1735,
-		["role"] = "Nahkampf-DPS",
+		["role"] = "Melee DPS",
 		["lifetime_spent"] = -1221,
 		["spec"] = "Kampf (15/31/5)",
 		["player"] = "Danyna",
@@ -6969,7 +7005,7 @@ MonDKP_DKPTable = {
 		["rankName"] = "None",
 		["lifetime_spent"] = 0,
 		["lifetime_gained"] = 120,
-		["role"] = "Nahkampf-DPS",
+		["role"] = "Melee DPS",
 		["dkp"] = 120,
 		["spec"] = "Furor (17/34/0)",
 		["player"] = "Dermettler",
@@ -6981,9 +7017,9 @@ MonDKP_DKPTable = {
 		["rankName"] = "Klassenleiter",
 		["class"] = "WARRIOR",
 		["lifetime_gained"] = 2080,
-		["role"] = "Tank",
+		["role"] = "Melee DPS",
 		["lifetime_spent"] = -1117,
-		["spec"] = "Schutz (11/3/37)",
+		["spec"] = "Furor (0/32/19)",
 		["player"] = "Diazlite",
 		["dkp"] = 814,
 		["rank"] = 3,
@@ -7016,12 +7052,12 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Mitglied",
 		["class"] = "ROGUE",
-		["lifetime_gained"] = 500,
+		["lifetime_gained"] = 525,
 		["role"] = "Melee DPS",
 		["lifetime_spent"] = -154,
 		["spec"] = "Kampf (19/32/0)",
 		["player"] = "Dägga",
-		["dkp"] = 191,
+		["dkp"] = 216,
 		["rank"] = 7,
 	}, -- [29]
 	{
@@ -7076,12 +7112,12 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "ROGUE",
-		["lifetime_gained"] = 1796,
+		["lifetime_gained"] = 1821,
 		["role"] = "Melee DPS",
 		["lifetime_spent"] = -1415,
 		["spec"] = "Kampf (15/31/5)",
 		["player"] = "Fritt",
-		["dkp"] = 280,
+		["dkp"] = 305,
 		["rank"] = 5,
 	}, -- [34]
 	{
@@ -7208,24 +7244,24 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "PALADIN",
-		["lifetime_gained"] = 1080,
+		["lifetime_gained"] = 1213,
 		["role"] = "Healer",
 		["lifetime_spent"] = -214,
 		["spec"] = "Heilig (35/11/5)",
 		["player"] = "Hôlywarrior",
-		["dkp"] = 741,
+		["dkp"] = 609,
 		["rank"] = 5,
 	}, -- [45]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "HUNTER",
-		["lifetime_gained"] = 975,
+		["lifetime_gained"] = 1000,
 		["role"] = "Range DPS",
 		["lifetime_spent"] = -362,
 		["spec"] = "Treffsicherheit (6/34/11)",
 		["player"] = "Ibutec",
-		["dkp"] = 588,
+		["dkp"] = 613,
 		["rank"] = 5,
 	}, -- [46]
 	{
@@ -7256,12 +7292,12 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "PRIEST",
-		["lifetime_gained"] = 1125,
+		["lifetime_gained"] = 1150,
 		["role"] = "Healer",
 		["lifetime_spent"] = -643,
 		["spec"] = "Heilig (21/30/0)",
 		["player"] = "Jetlee",
-		["dkp"] = 457,
+		["dkp"] = 482,
 		["rank"] = 5,
 	}, -- [49]
 	{
@@ -7316,26 +7352,14 @@ MonDKP_DKPTable = {
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "WARLOCK",
-		["lifetime_gained"] = 1135,
+		["lifetime_gained"] = 1160,
 		["role"] = "Caster DPS",
 		["lifetime_spent"] = -406,
 		["spec"] = "Zerstörung (9/21/21)",
 		["player"] = "Klaibo",
-		["dkp"] = 610,
+		["dkp"] = 635,
 		["rank"] = 5,
 	}, -- [54]
-	{
-		["previous_dkp"] = 0,
-		["rankName"] = "Raidmember",
-		["class"] = "PALADIN",
-		["lifetime_gained"] = 455,
-		["role"] = "Nahkampf-DPS",
-		["lifetime_spent"] = -143,
-		["spec"] = "Vergeltung (11/8/32)",
-		["player"] = "Kora",
-		["dkp"] = 272,
-		["rank"] = 5,
-	}, -- [55]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7347,7 +7371,7 @@ MonDKP_DKPTable = {
 		["player"] = "Kuzmitch",
 		["dkp"] = 121,
 		["rank"] = 5,
-	}, -- [56]
+	}, -- [55]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7359,7 +7383,7 @@ MonDKP_DKPTable = {
 		["player"] = "Káhli",
 		["dkp"] = 617,
 		["rank"] = 5,
-	}, -- [57]
+	}, -- [56]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Offizier",
@@ -7371,7 +7395,7 @@ MonDKP_DKPTable = {
 		["player"] = "Kühltruhe",
 		["dkp"] = 748,
 		["rank"] = 2,
-	}, -- [58]
+	}, -- [57]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7383,7 +7407,7 @@ MonDKP_DKPTable = {
 		["player"] = "Lauret",
 		["dkp"] = 75,
 		["rank"] = 5,
-	}, -- [59]
+	}, -- [58]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7395,7 +7419,7 @@ MonDKP_DKPTable = {
 		["player"] = "Leeander",
 		["dkp"] = 252,
 		["rank"] = 5,
-	}, -- [60]
+	}, -- [59]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7407,7 +7431,7 @@ MonDKP_DKPTable = {
 		["player"] = "Lerix",
 		["dkp"] = 170,
 		["rank"] = 5,
-	}, -- [61]
+	}, -- [60]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Offizier",
@@ -7419,7 +7443,7 @@ MonDKP_DKPTable = {
 		["player"] = "Lycaria",
 		["dkp"] = 303,
 		["rank"] = 2,
-	}, -- [62]
+	}, -- [61]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7429,9 +7453,9 @@ MonDKP_DKPTable = {
 		["lifetime_spent"] = -1633,
 		["spec"] = "Frost (0/11/40)",
 		["player"] = "Magice",
-		["dkp"] = 137,
+		["dkp"] = 87,
 		["rank"] = 5,
-	}, -- [63]
+	}, -- [62]
 	{
 		["previous_dkp"] = 0,
 		["dkp"] = 129,
@@ -7443,7 +7467,7 @@ MonDKP_DKPTable = {
 		["rankName"] = "Twink",
 		["spec"] = "Arcane (31/0/20)",
 		["rank"] = 6,
-	}, -- [64]
+	}, -- [63]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7455,7 +7479,7 @@ MonDKP_DKPTable = {
 		["player"] = "Marole",
 		["dkp"] = 471,
 		["rank"] = 5,
-	}, -- [65]
+	}, -- [64]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7467,19 +7491,19 @@ MonDKP_DKPTable = {
 		["player"] = "Murtarim",
 		["dkp"] = 445,
 		["rank"] = 5,
-	}, -- [66]
+	}, -- [65]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "None",
 		["lifetime_spent"] = -30,
-		["lifetime_gained"] = 225,
+		["lifetime_gained"] = 250,
 		["role"] = "Healer",
-		["dkp"] = 195,
+		["dkp"] = 220,
 		["spec"] = "Heilig (21/30/0)",
 		["player"] = "Naeppi",
 		["class"] = "PRIEST",
 		["rank"] = 10,
-	}, -- [67]
+	}, -- [66]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7491,7 +7515,7 @@ MonDKP_DKPTable = {
 		["player"] = "Namisha",
 		["dkp"] = 500,
 		["rank"] = 5,
-	}, -- [68]
+	}, -- [67]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7503,31 +7527,31 @@ MonDKP_DKPTable = {
 		["player"] = "Nebyulah",
 		["dkp"] = 883,
 		["rank"] = 5,
-	}, -- [69]
+	}, -- [68]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Offizier",
 		["class"] = "MAGE",
-		["lifetime_gained"] = 1815,
+		["lifetime_gained"] = 1840,
 		["role"] = "Caster DPS",
 		["lifetime_spent"] = -1153,
 		["spec"] = "Arkan (31/0/20)",
 		["player"] = "Nickel",
-		["dkp"] = 517,
+		["dkp"] = 542,
 		["rank"] = 2,
-	}, -- [70]
+	}, -- [69]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "HUNTER",
-		["lifetime_gained"] = 1145,
+		["lifetime_gained"] = 1170,
 		["role"] = "Range DPS",
 		["lifetime_spent"] = -635,
 		["spec"] = "Treffsicherheit (17/34/0)",
 		["player"] = "Nitewolf",
-		["dkp"] = 485,
+		["dkp"] = 510,
 		["rank"] = 5,
-	}, -- [71]
+	}, -- [70]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7539,7 +7563,7 @@ MonDKP_DKPTable = {
 		["player"] = "Nohsi",
 		["dkp"] = 484,
 		["rank"] = 5,
-	}, -- [72]
+	}, -- [71]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7551,31 +7575,19 @@ MonDKP_DKPTable = {
 		["player"] = "Noxxion",
 		["dkp"] = 505,
 		["rank"] = 5,
-	}, -- [73]
-	{
-		["previous_dkp"] = 0,
-		["rankName"] = "Raidmember",
-		["class"] = "ROGUE",
-		["lifetime_gained"] = 867,
-		["role"] = "Nahkampf-DPS",
-		["lifetime_spent"] = -793,
-		["spec"] = "Kampf (15/31/5)",
-		["player"] = "Noxxy",
-		["dkp"] = 69,
-		["rank"] = 5,
-	}, -- [74]
+	}, -- [72]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Offizier",
 		["class"] = "PRIEST",
-		["lifetime_gained"] = 1360,
+		["lifetime_gained"] = 1385,
 		["role"] = "Healer",
 		["lifetime_spent"] = -1325,
 		["spec"] = "Heilig (21/30/0)",
 		["player"] = "Nynea",
-		["dkp"] = 10,
+		["dkp"] = 35,
 		["rank"] = 2,
-	}, -- [75]
+	}, -- [73]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7587,7 +7599,7 @@ MonDKP_DKPTable = {
 		["player"] = "Olof",
 		["dkp"] = 363,
 		["rank"] = 5,
-	}, -- [76]
+	}, -- [74]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "2.Gildenleader",
@@ -7599,7 +7611,7 @@ MonDKP_DKPTable = {
 		["player"] = "Penalism",
 		["dkp"] = 306,
 		["rank"] = 1,
-	}, -- [77]
+	}, -- [75]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7611,7 +7623,7 @@ MonDKP_DKPTable = {
 		["player"] = "Pvpgotthans",
 		["dkp"] = 435,
 		["rank"] = 5,
-	}, -- [78]
+	}, -- [76]
 	{
 		["previous_dkp"] = 0,
 		["dkp"] = 305,
@@ -7623,7 +7635,7 @@ MonDKP_DKPTable = {
 		["role"] = "Bereich DPS",
 		["spec"] = "Treffsicherheit (20/31/0)",
 		["rank"] = 8,
-	}, -- [79]
+	}, -- [77]
 	{
 		["previous_dkp"] = 0,
 		["dkp"] = 75,
@@ -7635,7 +7647,7 @@ MonDKP_DKPTable = {
 		["role"] = "Keine Rolle erkannt",
 		["class"] = "MAGE",
 		["rank"] = 7,
-	}, -- [80]
+	}, -- [78]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7647,7 +7659,7 @@ MonDKP_DKPTable = {
 		["player"] = "Qny",
 		["dkp"] = 311,
 		["rank"] = 5,
-	}, -- [81]
+	}, -- [79]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7659,7 +7671,7 @@ MonDKP_DKPTable = {
 		["player"] = "Ramschazar",
 		["dkp"] = 412,
 		["rank"] = 5,
-	}, -- [82]
+	}, -- [80]
 	{
 		["previous_dkp"] = 0,
 		["dkp"] = 178,
@@ -7669,9 +7681,9 @@ MonDKP_DKPTable = {
 		["class"] = "WARRIOR",
 		["rankName"] = "Probant",
 		["role"] = "Melee DPS",
-		["spec"] = "Waffen (31/20/0)",
+		["spec"] = "Furor (20/31/0)",
 		["rank"] = 8,
-	}, -- [83]
+	}, -- [81]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7683,7 +7695,7 @@ MonDKP_DKPTable = {
 		["player"] = "Rexmo",
 		["dkp"] = 250,
 		["rank"] = 5,
-	}, -- [84]
+	}, -- [82]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7695,7 +7707,7 @@ MonDKP_DKPTable = {
 		["player"] = "Riklo",
 		["dkp"] = 673,
 		["rank"] = 5,
-	}, -- [85]
+	}, -- [83]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7707,19 +7719,19 @@ MonDKP_DKPTable = {
 		["player"] = "Ruckzuckhieb",
 		["dkp"] = 105,
 		["rank"] = 5,
-	}, -- [86]
+	}, -- [84]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Offizier",
 		["class"] = "MAGE",
-		["lifetime_gained"] = 1865,
+		["lifetime_gained"] = 1890,
 		["role"] = "Caster DPS",
 		["lifetime_spent"] = -1141,
 		["spec"] = "Frost (11/0/40)",
 		["player"] = "Schill",
-		["dkp"] = 693,
+		["dkp"] = 718,
 		["rank"] = 2,
-	}, -- [87]
+	}, -- [85]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7729,12 +7741,12 @@ MonDKP_DKPTable = {
 		["lifetime_spent"] = -499,
 		["spec"] = "Heilig (21/30/0)",
 		["player"] = "Shíbuya",
-		["dkp"] = 181,
+		["dkp"] = 131,
 		["rank"] = 5,
-	}, -- [88]
+	}, -- [86]
 	{
 		["previous_dkp"] = 0,
-		["dkp"] = 75,
+		["dkp"] = 25,
 		["lifetime_spent"] = 0,
 		["lifetime_gained"] = 175,
 		["player"] = "Silanusx",
@@ -7743,7 +7755,7 @@ MonDKP_DKPTable = {
 		["role"] = "Caster DPS",
 		["spec"] = "Gebrechen (30/0/21)",
 		["rank"] = 8,
-	}, -- [89]
+	}, -- [87]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Offizier",
@@ -7755,7 +7767,7 @@ MonDKP_DKPTable = {
 		["player"] = "Sinslegend",
 		["dkp"] = 517,
 		["rank"] = 2,
-	}, -- [90]
+	}, -- [88]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "omg me ded",
@@ -7767,7 +7779,7 @@ MonDKP_DKPTable = {
 		["player"] = "Smince",
 		["dkp"] = 410,
 		["rank"] = 9,
-	}, -- [91]
+	}, -- [89]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7777,9 +7789,9 @@ MonDKP_DKPTable = {
 		["lifetime_spent"] = -215,
 		["spec"] = "Zerstörung (7/21/23)",
 		["player"] = "Snakeeater",
-		["dkp"] = -25,
+		["dkp"] = -75,
 		["rank"] = 5,
-	}, -- [92]
+	}, -- [90]
 	{
 		["previous_dkp"] = 0,
 		["dkp"] = 678,
@@ -7791,7 +7803,7 @@ MonDKP_DKPTable = {
 		["role"] = "Melee DPS",
 		["rankName"] = "Klassenleiter",
 		["rank"] = 3,
-	}, -- [93]
+	}, -- [91]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7803,7 +7815,7 @@ MonDKP_DKPTable = {
 		["player"] = "Sphêre",
 		["dkp"] = 795,
 		["rank"] = 5,
-	}, -- [94]
+	}, -- [92]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "omg me ded",
@@ -7815,7 +7827,7 @@ MonDKP_DKPTable = {
 		["player"] = "Steyra",
 		["dkp"] = 370,
 		["rank"] = 9,
-	}, -- [95]
+	}, -- [93]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7827,7 +7839,7 @@ MonDKP_DKPTable = {
 		["player"] = "Stroboaik",
 		["dkp"] = 324,
 		["rank"] = 5,
-	}, -- [96]
+	}, -- [94]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7839,7 +7851,7 @@ MonDKP_DKPTable = {
 		["player"] = "Thamos",
 		["dkp"] = 529,
 		["rank"] = 5,
-	}, -- [97]
+	}, -- [95]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7851,7 +7863,7 @@ MonDKP_DKPTable = {
 		["player"] = "Tyshea",
 		["dkp"] = 597,
 		["rank"] = 5,
-	}, -- [98]
+	}, -- [96]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Klassenleiter",
@@ -7863,19 +7875,19 @@ MonDKP_DKPTable = {
 		["player"] = "Vinofred",
 		["dkp"] = 357,
 		["rank"] = 3,
-	}, -- [99]
+	}, -- [97]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "ROGUE",
-		["lifetime_gained"] = 870,
+		["lifetime_gained"] = 895,
 		["role"] = "Melee DPS",
 		["lifetime_spent"] = -564,
 		["spec"] = "Kampf (15/31/5)",
 		["player"] = "Volvox",
-		["dkp"] = 281,
+		["dkp"] = 306,
 		["rank"] = 5,
-	}, -- [100]
+	}, -- [98]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Offizier",
@@ -7887,7 +7899,7 @@ MonDKP_DKPTable = {
 		["player"] = "Whoopwhoop",
 		["dkp"] = 457,
 		["rank"] = 2,
-	}, -- [101]
+	}, -- [99]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7899,7 +7911,7 @@ MonDKP_DKPTable = {
 		["player"] = "Wurstmitsenf",
 		["dkp"] = 330,
 		["rank"] = 5,
-	}, -- [102]
+	}, -- [100]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7911,19 +7923,19 @@ MonDKP_DKPTable = {
 		["player"] = "Xeptor",
 		["dkp"] = 323,
 		["rank"] = 5,
-	}, -- [103]
+	}, -- [101]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "DRUID",
-		["lifetime_gained"] = 795,
+		["lifetime_gained"] = 820,
 		["role"] = "Healer",
 		["lifetime_spent"] = -234,
 		["spec"] = "Wiederherst (24/0/27)",
 		["player"] = "Yaeneris",
-		["dkp"] = 389,
+		["dkp"] = 414,
 		["rank"] = 5,
-	}, -- [104]
+	}, -- [102]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7935,19 +7947,19 @@ MonDKP_DKPTable = {
 		["player"] = "Zaba",
 		["dkp"] = 458,
 		["rank"] = 5,
-	}, -- [105]
+	}, -- [103]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
 		["class"] = "WARRIOR",
-		["lifetime_gained"] = 1340,
+		["lifetime_gained"] = 1365,
 		["role"] = "Melee DPS",
 		["lifetime_spent"] = -972,
 		["spec"] = "Furor (17/34/0)",
 		["player"] = "Zapzzarap",
-		["dkp"] = 343,
+		["dkp"] = 360,
 		["rank"] = 5,
-	}, -- [106]
+	}, -- [104]
 	{
 		["previous_dkp"] = 0,
 		["rankName"] = "Raidmember",
@@ -7957,9 +7969,9 @@ MonDKP_DKPTable = {
 		["lifetime_spent"] = -1213,
 		["spec"] = "Heilig (31/0/20)",
 		["player"] = "Ðøpe",
-		["dkp"] = 656,
+		["dkp"] = 558,
 		["rank"] = 5,
-	}, -- [107]
+	}, -- [105]
 }
 MonDKP_DKPHistory = {
 	{
@@ -11448,7 +11460,91 @@ MonDKP_DKPHistory = {
 		["date"] = 1570466128,
 		["reason"] = "On Time Bonus",
 	}, -- [498]
-	["seed"] = 0,
+	{
+		["players"] = "Silanusx,",
+		["index"] = "Schill-1579374027",
+		["dkp"] = -50,
+		["date"] = 1579374027,
+		["reason"] = "Andere - Nicht an/abgemeldet 19.01",
+	}, -- [499]
+	{
+		["players"] = "Snakeeater,",
+		["index"] = "Schill-1579373967",
+		["dkp"] = -50,
+		["date"] = 1579373967,
+		["reason"] = "Andere - Nicht an/abgemeldet 19.01",
+	}, -- [500]
+	{
+		["players"] = "Magice,",
+		["index"] = "Schill-1579373958",
+		["dkp"] = -50,
+		["date"] = 1579373958,
+		["reason"] = "Andere - Nicht an/abgemeldet 19.01",
+	}, -- [501]
+	{
+		["players"] = "Hôlywarrior,",
+		["index"] = "Schill-1579373936",
+		["dkp"] = -216,
+		["date"] = 1579373936,
+		["reason"] = "Andere - Nicht an/abgemeldet 19.01 +-",
+	}, -- [502]
+	{
+		["players"] = "Shíbuya,",
+		["index"] = "Schill-1579373914",
+		["dkp"] = -50,
+		["date"] = 1579373914,
+		["reason"] = "Andere - Nicht an/abgemeldet 19.01",
+	}, -- [503]
+	{
+		["players"] = "Hôlywarrior,",
+		["index"] = "Schill-1579373893",
+		["dkp"] = 108,
+		["date"] = 1579373893,
+		["reason"] = "Andere - Nicht an/abgemeldet 19.01",
+	}, -- [504]
+	{
+		["players"] = "Ðøpe,",
+		["index"] = "Schill-1579373872",
+		["dkp"] = -98,
+		["date"] = 1579373872,
+		["reason"] = "Andere - Nicht an/abgemeldet 19.01",
+	}, -- [505]
+	{
+		["players"] = "Hôlywarrior,",
+		["index"] = "Schill-1579175719",
+		["dkp"] = -49,
+		["date"] = 1579175719,
+		["reason"] = "Andere - fehlender prozentualer Abzug",
+	}, -- [506]
+	{
+		["players"] = "Yaeneris,Aywen,Ibutec,Nitewolf,Nickel,Schill,Barlay,Hôlywarrior,Amagedonn,Bellasami,Nynea,Naeppi,Jetlee,Volvox,Fritt,Dägga,Klaibo,Breakingnät,Bxdwow,Zapzzarap,",
+		["index"] = "Schill-1579126148",
+		["dkp"] = 15,
+		["date"] = 1579126148,
+		["reason"] = "Raid-Abschlussbonus",
+	}, -- [507]
+	{
+		["players"] = "Yaeneris,Aywen,Ibutec,Nitewolf,Nickel,Schill,Barlay,Hôlywarrior,Amagedonn,Bellasami,Nynea,Naeppi,Jetlee,Volvox,Fritt,Dägga,Klaibo,Breakingnät,Bxdwow,Zapzzarap,",
+		["index"] = "Schill-1579126145",
+		["dkp"] = 10,
+		["date"] = 1579126145,
+		["reason"] = "Onyxias Versteck: Onyxia",
+	}, -- [508]
+	{
+		["players"] = "Bxdwow,",
+		["index"] = "Schill-1579125998",
+		["dkp"] = 1,
+		["date"] = 1579125998,
+		["reason"] = "Fehler beheben",
+	}, -- [509]
+	{
+		["players"] = "Zapzzarap,",
+		["index"] = "Schill-1579125984",
+		["dkp"] = -8,
+		["date"] = 1579125984,
+		["reason"] = "Andere - Ring der Bindungen",
+	}, -- [510]
+	["seed"] = "Schill-1579374027",
 }
 MonDKP_MinBids = {
 }
@@ -11609,6 +11705,20 @@ MonDKP_Archive = {
 		["lifetime_spent"] = 0,
 		["deleted"] = true,
 	},
+	["Sheepcannon"] = {
+		["lifetime_gained"] = 0,
+		["edited"] = 1575833708,
+		["dkp"] = 0,
+		["lifetime_spent"] = 0,
+		["deleted"] = true,
+	},
+	["Kora"] = {
+		["lifetime_gained"] = 0,
+		["edited"] = 1579128348,
+		["dkp"] = 0,
+		["lifetime_spent"] = 0,
+		["deleted"] = true,
+	},
 	["Qosmio"] = {
 		["lifetime_gained"] = 0,
 		["edited"] = 1577908896,
@@ -11665,9 +11775,9 @@ MonDKP_Archive = {
 		["lifetime_spent"] = 0,
 		["deleted"] = true,
 	},
-	["Sheepcannon"] = {
+	["Noxxy"] = {
 		["lifetime_gained"] = 0,
-		["edited"] = 1575833708,
+		["edited"] = 1579127821,
 		["dkp"] = 0,
 		["lifetime_spent"] = 0,
 		["deleted"] = true,
