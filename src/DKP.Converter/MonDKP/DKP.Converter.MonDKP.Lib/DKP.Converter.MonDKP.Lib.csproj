@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DKP.Data\EQdkpPlus\DKP.Data.EQdkpPlus.Entities\DKP.Data.EQdkpPlus.Entities.csproj" />
+    <ProjectReference Include="..\..\..\DKP.Data\MonDKP\DKP.Data.MonDKP.Entities\DKP.Data.MonDKP.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -24,10 +24,6 @@ namespace DKP.Data.MonDKP.Lib
 
                 var str = File.ReadAllText(filePath);
                 lua.DoString(str);
-
-                //var lootTable  = lua.GetTable("MonDKP_Loot");
-                var dkpTable = lua.GetTable("MonDKP_DKPTable");
-
                 var db = new MonDkpDatabase
                 {
                     DkpHistory = new DkpHistory

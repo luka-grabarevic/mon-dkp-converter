@@ -5,12 +5,43 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="..\..\..\..\libs\MonolithDKP\Localization\Localization.cn.lua" Link="Data\Localization\Localization.cn.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\libs\MonolithDKP\Localization\Localization.de.lua" Link="Data\Localization\Localization.de.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\libs\MonolithDKP\Localization\Localization.en.lua" Link="Data\Localization\Localization.en.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\libs\MonolithDKP\Localization\Localization.es.lua" Link="Data\Localization\Localization.es.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\libs\MonolithDKP\Localization\Localization.fr.lua" Link="Data\Localization\Localization.fr.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\libs\MonolithDKP\Localization\Localization.kr.lua" Link="Data\Localization\Localization.kr.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\libs\MonolithDKP\Localization\Localization.ru.lua" Link="Data\Localization\Localization.ru.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\libs\MonolithDKP\Localization\Localization.tw.lua" Link="Data\Localization\Localization.tw.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NLua" Version="1.4.26" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\DKP.Shared\DKP.Shared.Lib\DKP.Shared.Lib.csproj" />
     <ProjectReference Include="..\DKP.Data.MonDKP.Entities\DKP.Data.MonDKP.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Localization\" />
   </ItemGroup>
 
 </Project>

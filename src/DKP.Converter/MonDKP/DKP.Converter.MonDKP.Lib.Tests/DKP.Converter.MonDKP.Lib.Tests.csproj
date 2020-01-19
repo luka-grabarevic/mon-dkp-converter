@@ -13,4 +13,18 @@
     <PackageReference Include="coverlet.collector" Version="1.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SampleData\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\..\DKP.Data\MonDKP\DKP.Data.MonDKP.Lib.Tests\SampleData\MonolithDKP.lua" Link="SampleData\MonolithDKP.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DKP.Converter.MonDKP.Lib\DKP.Converter.MonDKP.Lib.csproj" />
+  </ItemGroup>
+
 </Project>
