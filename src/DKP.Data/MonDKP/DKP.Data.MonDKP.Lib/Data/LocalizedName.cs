@@ -2,7 +2,7 @@
 
 namespace DKP.Data.MonDKP.Lib.Data
 {
-    public class LocalizedName
+    public abstract class LocalizedName
     {
         public String Locale { get; set; }
 
