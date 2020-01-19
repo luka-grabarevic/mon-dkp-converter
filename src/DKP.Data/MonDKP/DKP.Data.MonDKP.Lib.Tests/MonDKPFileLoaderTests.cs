@@ -13,7 +13,7 @@ namespace DKP.Data.MonDKP.Lib.Tests
         private const String SampleDataMonDkpXml = @"SampleData\mon-dkp.xml";
         private const String SampleDataMonDkpHistoryXml = @"SampleData\mon-dkp-history.xml";
         private const String SampleDataMonDkpLootHistoryXml = @"SampleData\mon-loot-history.xml";
-        private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP-fixed.lua";
+        private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP.lua";
 
         [TestMethod]
         [DeploymentItem(SampleDataMonDkpLua)]
@@ -34,9 +34,8 @@ namespace DKP.Data.MonDKP.Lib.Tests
                 }
             }
 
-            Assert.IsFalse(result.Any());
+            Assert.IsFalse(result.Any(a => a.Type == MismatchedDataType.DkpNow));
         }
-
 
         private void LogSumMismatches(String title, Int32 expected, Int32 actual)
         {
