@@ -7,6 +7,6 @@ namespace DKP.Data.MonDKP.Entities
     public class LootHistory
     {
         [XmlElement("lootentry", typeof(LootEntry))]
-        public List<LootEntry> LootEntries { get; set; }
+        public List<LootEntry> LootEntries { get; set; } = new List<LootEntry>();
     }
 }

@@ -29,7 +29,25 @@ namespace DKP.Shared.Lib
             }
         }
 
-        private static String Serialize<T>(T item, Boolean indent = false)
+        // https://stackoverflow.com/a/3732234
+        // To Clean XML
+        public static String SerializeToString<T>(T value, Boolean indent = false)
+        {
+            var emptyNamespaces = new XmlSerializerNamespaces(new[] { XmlQualifiedName.Empty });
+            var serializer = new XmlSerializer(value.GetType());
+            var settings = new XmlWriterSettings();
+            settings.Indent = indent;
+            settings.OmitXmlDeclaration = true;
+
+            using (var stream = new StringWriter())
+            using (var writer = XmlWriter.Create(stream, settings))
+            {
+                serializer.Serialize(writer, value, emptyNamespaces);
+                return stream.ToString();
+            }
+        }
+
+        public static String Serialize<T>(T item, Boolean indent = false)
         {
             var itemType = item.GetType();
             var stringBuilder = new StringBuilder();

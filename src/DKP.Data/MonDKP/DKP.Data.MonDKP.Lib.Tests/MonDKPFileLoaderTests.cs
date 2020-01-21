@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using DKP.Data.MonDKP.Entities;
+using DKP.Shared.Lib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DKP.Data.MonDKP.Lib.Tests
@@ -35,6 +37,13 @@ namespace DKP.Data.MonDKP.Lib.Tests
             }
 
             Assert.IsFalse(result.Any(a => a.Type == MismatchedDataType.DkpNow));
+        }
+
+        [TestMethod]
+        [DeploymentItem(SampleDataMonDkpLua)]
+        public void WriteMonDkpChunks()
+        {
+            MonDkpWritingHelper.WriteMonDkpChunks(MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua), 200, @"D:\Temp\MonDKP");
         }
 
         private void LogSumMismatches(String title, Int32 expected, Int32 actual)

@@ -7,6 +7,6 @@ namespace DKP.Data.MonDKP.Entities
     public class DkpHistory
     {
         [XmlElement("historyentry", typeof(HistoryEntry))]
-        public List<HistoryEntry> HistoryEntries { get; set; }
+        public List<HistoryEntry> HistoryEntries { get; set; } = new List<HistoryEntry>();
     }
 }

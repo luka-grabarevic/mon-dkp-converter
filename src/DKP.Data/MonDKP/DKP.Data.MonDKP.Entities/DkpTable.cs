@@ -7,6 +7,6 @@ namespace DKP.Data.MonDKP.Entities
     public class DkpTable
     {
         [XmlElement("dkpentry", typeof(DkpEntry))]
-        public List<DkpEntry> DkpEntries { get; set; }
+        public List<DkpEntry> DkpEntries { get; set; } = new List<DkpEntry>();
     }
 }
