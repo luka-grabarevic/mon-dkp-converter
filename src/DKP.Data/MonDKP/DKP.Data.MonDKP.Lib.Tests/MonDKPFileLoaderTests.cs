@@ -43,7 +43,14 @@ namespace DKP.Data.MonDKP.Lib.Tests
         [DeploymentItem(SampleDataMonDkpLua)]
         public void WriteMonDkpChunks()
         {
-            MonDkpWritingHelper.WriteMonDkpChunks(MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua), 200, @"D:\Temp\MonDKP");
+            var loadMonDkpDatabase = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
+            var playerToKeep = "Ascadia";
+            loadMonDkpDatabase.DkpTable.DkpEntries.RemoveAll(entry => entry.Player != playerToKeep);
+            loadMonDkpDatabase.DkpHistory.HistoryEntries.RemoveAll(entry => !entry.Players.Contains(playerToKeep));
+            loadMonDkpDatabase.LootHistory.LootEntries.RemoveAll(entry => entry.Player != playerToKeep);
+            loadMonDkpDatabase.DkpHistory.HistoryEntries.ForEach(entry => entry.PlayerString =$"{playerToKeep},");
+
+            MonDkpWritingHelper.WriteMonDkpChunks(loadMonDkpDatabase, 50, @"D:\Temp\MonDKP");
         }
 
         private void LogSumMismatches(String title, Int32 expected, Int32 actual)
