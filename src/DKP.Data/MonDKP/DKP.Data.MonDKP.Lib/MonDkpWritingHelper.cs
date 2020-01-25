@@ -44,17 +44,17 @@ namespace DKP.Data.MonDKP.Lib
                     var dkpHistoryOfPlayer =
                         chunk.DkpHistory.HistoryEntries.Where(a => a.Players.Contains(playerObj.Player)).ToList();
 
-                    //var previousGainedDkp = 0;
-                    //var previousDkpSpentDkp = 0;
-                    //var previousActualDkp = 0;
+                    var previousGainedDkp = 0;
+                    var previousDkpSpentDkp = 0;
+                    var previousActualDkp = 0;
 
-                    //if (previousChunk != null)
-                    //{
-                    //    var playerPreviousEntry = previousChunk.DkpTable.DkpEntries.Single(a => a.Player == playerObj.Player);
-                    //    previousGainedDkp = playerPreviousEntry.LifetimeGained;
-                    //    previousDkpSpentDkp = playerPreviousEntry.LifetimeSpent;
-                    //    previousActualDkp = playerPreviousEntry.Dkp;
-                    //}
+                    if (previousChunk != null)
+                    {
+                        var playerPreviousEntry = previousChunk.DkpTable.DkpEntries.Single(a => a.Player == playerObj.Player);
+                        previousGainedDkp = playerPreviousEntry.LifetimeGained;
+                        previousDkpSpentDkp = playerPreviousEntry.LifetimeSpent;
+                        previousActualDkp = playerPreviousEntry.Dkp;
+                    }
 
                     var gainedDkp = dkpHistoryOfPlayer.Where(a => a.Dkp > 0).Sum(a => a.Dkp);
                     var lostDkp = dkpHistoryOfPlayer.Where(a => a.Dkp < 0).Sum(a => a.Dkp);
@@ -62,30 +62,19 @@ namespace DKP.Data.MonDKP.Lib
 
                     var actualDkp = gainedDkp + lostDkp + spentDkp;
 
-                    //chunk.DkpTable.DkpEntries.Add(new DkpEntry
-                    //{
-                    //    Player = playerObj.Player,
-                    //    Class = playerObj.Class,
-                    //    Dkp = actualDkp + previousActualDkp,
-                    //    LifetimeSpent = spentDkp + previousDkpSpentDkp,
-                    //    LifetimeGained = gainedDkp + previousGainedDkp
-                    //});
-
-
                     chunk.DkpTable.DkpEntries.Add(new DkpEntry
                     {
                         Player = playerObj.Player,
                         Class = playerObj.Class,
-                        Dkp = 0,
-                        LifetimeSpent = 0,
-                        LifetimeGained = 0
+                        Dkp = actualDkp + previousActualDkp,
+                        LifetimeSpent = spentDkp + previousDkpSpentDkp,
+                        LifetimeGained = gainedDkp + previousGainedDkp
                     });
-
                 }
-                //previousChunk = chunk;
+                previousChunk = chunk;
             }
 
-            //chunks.Last().DkpTable = database.DkpTable;
+            chunks.Last().DkpTable = database.DkpTable;
 
             return chunks;
         }

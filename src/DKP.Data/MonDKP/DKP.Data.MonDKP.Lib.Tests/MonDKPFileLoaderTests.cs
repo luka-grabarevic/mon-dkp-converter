@@ -44,13 +44,13 @@ namespace DKP.Data.MonDKP.Lib.Tests
         public void WriteMonDkpChunks()
         {
             var loadMonDkpDatabase = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
-            var playerToKeep = "Ascadia";
-            loadMonDkpDatabase.DkpTable.DkpEntries.RemoveAll(entry => entry.Player != playerToKeep);
-            loadMonDkpDatabase.DkpHistory.HistoryEntries.RemoveAll(entry => !entry.Players.Contains(playerToKeep));
-            loadMonDkpDatabase.LootHistory.LootEntries.RemoveAll(entry => entry.Player != playerToKeep);
-            loadMonDkpDatabase.DkpHistory.HistoryEntries.ForEach(entry => entry.PlayerString =$"{playerToKeep},");
+            //var playerToKeep = "Ascadia";
+            //loadMonDkpDatabase.DkpTable.DkpEntries.RemoveAll(entry => entry.Player != playerToKeep);
+            //loadMonDkpDatabase.DkpHistory.HistoryEntries.RemoveAll(entry => !entry.Players.Contains(playerToKeep));
+            //loadMonDkpDatabase.LootHistory.LootEntries.RemoveAll(entry => entry.Player != playerToKeep);
+            //loadMonDkpDatabase.DkpHistory.HistoryEntries.ForEach(entry => entry.PlayerString =$"{playerToKeep},");
 
-            MonDkpWritingHelper.WriteMonDkpChunks(loadMonDkpDatabase, 50, @"D:\Temp\MonDKP");
+            MonDkpWritingHelper.WriteMonDkpChunks(loadMonDkpDatabase, 200, @"D:\Temp\MonDKP");
         }
 
         private void LogSumMismatches(String title, Int32 expected, Int32 actual)
