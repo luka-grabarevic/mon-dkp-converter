@@ -16,7 +16,8 @@ namespace DKP.Data.MonDKP.Lib.Tests
         {
             var database = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
 
-            var players = database.DkpTable.DkpEntries.Select(a => a.Player).ToArray();
+            //var players = database.DkpTable.DkpEntries.Select(a => a.Player).ToArray();
+            var players = database.DkpHistory.HistoryEntries.SelectMany(a => a.Players).Distinct().ToArray();
             var result =
                 CheckDataConsistency(database, players).ToList();
 
@@ -141,7 +142,7 @@ namespace DKP.Data.MonDKP.Lib.Tests
         {
             foreach (var player in players)
             {
-                var lootHistoryOfPlayer = database.LootHistory.LootEntries.Where(a => a.Player == player 
+                var lootHistoryOfPlayer = database.LootHistory.LootEntries.Where(a => a.Player == player
                                                                                       && String.IsNullOrWhiteSpace(a.Deletes)
                                                                                       && String.IsNullOrWhiteSpace(a.DeletedBy));
                 var spentDkp = lootHistoryOfPlayer.Sum(a => Math.Abs(a.Cost)) * -1;
@@ -155,7 +156,7 @@ namespace DKP.Data.MonDKP.Lib.Tests
                 var actualDkp = gainedDkp + lostDkp + spentDkp;
 
                 var dkpEntry = database.DkpTable.DkpEntries.SingleOrDefault(a => a.Player == player);
-                if(dkpEntry != null)
+                if (dkpEntry != null)
                 {
                     if (dkpEntry.LifetimeGained != gainedDkp)
                     {
@@ -171,6 +172,12 @@ namespace DKP.Data.MonDKP.Lib.Tests
                     {
                         yield return new MismatchedData(MismatchedDataType.DkpNow, player, dkpEntry.Dkp, actualDkp);
                     }
+                }
+                else
+                {
+                    yield return new MismatchedData(MismatchedDataType.LifetimeGained, player, 0, gainedDkp) {IsDeleted = true};
+                    yield return new MismatchedData(MismatchedDataType.LifetimeSpent, player, 0, spentDkp) {IsDeleted = true};
+                    yield return new MismatchedData(MismatchedDataType.DkpNow, player, 0, actualDkp) {IsDeleted = true};
                 }
             }
         }
@@ -207,6 +214,8 @@ namespace DKP.Data.MonDKP.Lib.Tests
             public Int32 Diff => Expected - Actual;
 
             public Int32 Expected { get; }
+
+            public Boolean IsDeleted { get; set; }
 
             public String Player { get; }
 
