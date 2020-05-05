@@ -40,5 +40,11 @@ namespace DKP.Data.MonDKP.Entities
 
         [XmlIgnore]
         public String ItemId { get; set; }
+
+        [XmlIgnore]
+        public String DeletedBy { get; set; }
+
+        [XmlIgnore]
+        public String Deletes { get; set; }
     }
 }

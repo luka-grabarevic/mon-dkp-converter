@@ -1,10 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using DKP.Data.MonDKP.Entities;
-using DKP.Shared.Lib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DKP.Data.MonDKP.Lib.Tests
@@ -12,19 +10,15 @@ namespace DKP.Data.MonDKP.Lib.Tests
     [TestClass]
     public class MonDkpFileLoaderTests
     {
-        private const String SampleDataMonDkpXml = @"SampleData\mon-dkp.xml";
-        private const String SampleDataMonDkpHistoryXml = @"SampleData\mon-dkp-history.xml";
-        private const String SampleDataMonDkpLootHistoryXml = @"SampleData\mon-loot-history.xml";
-        private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP.lua";
-
         [TestMethod]
         [DeploymentItem(SampleDataMonDkpLua)]
         public void CheckIfDataSumsUp()
         {
             var database = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
 
+            var players = database.DkpTable.DkpEntries.Select(a => a.Player).ToArray();
             var result =
-                CheckDataConsistency(database, database.DkpTable.DkpEntries.Select(a => a.Player)).ToList();
+                CheckDataConsistency(database, players).ToList();
 
             var grpByPlayer = result.GroupBy(a => a.Player);
             foreach (var grp in grpByPlayer)
@@ -37,130 +31,6 @@ namespace DKP.Data.MonDKP.Lib.Tests
             }
 
             Assert.IsFalse(result.Any(a => a.Type == MismatchedDataType.DkpNow));
-        }
-
-        [TestMethod]
-        [DeploymentItem(SampleDataMonDkpLua)]
-        public void WriteMonDkpChunks()
-        {
-            var loadMonDkpDatabase = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
-            //var playerToKeep = "Ascadia";
-            //loadMonDkpDatabase.DkpTable.DkpEntries.RemoveAll(entry => entry.Player != playerToKeep);
-            //loadMonDkpDatabase.DkpHistory.HistoryEntries.RemoveAll(entry => !entry.Players.Contains(playerToKeep));
-            //loadMonDkpDatabase.LootHistory.LootEntries.RemoveAll(entry => entry.Player != playerToKeep);
-            //loadMonDkpDatabase.DkpHistory.HistoryEntries.ForEach(entry => entry.PlayerString =$"{playerToKeep},");
-
-            MonDkpWritingHelper.WriteMonDkpChunks(loadMonDkpDatabase, 200, @"D:\Temp\MonDKP");
-        }
-
-        private void LogSumMismatches(String title, Int32 expected, Int32 actual)
-        {
-            Debug.WriteLine($"{title}: Expected={expected}, Actual={actual}, Diff={expected - actual}");
-        }
-
-        private IEnumerable<MismatchedData> CheckDataConsistency(MonDkpDatabase database, IEnumerable<String> players)
-        {
-            foreach (var player in players)
-            {
-                foreach (var dkpEntry in database.DkpTable.DkpEntries.Where(a => a.Player == player))
-                {
-                    var lootHistoryOfPlayer = database.LootHistory.LootEntries.Where(a => a.Player == player);
-
-                    var dkpHistoryOfPlayer =
-                        database.DkpHistory.HistoryEntries.Where(a => a.Players.Contains(player)).ToList();
-
-                    var gainedDkp = dkpHistoryOfPlayer.Where(a => a.Dkp > 0).Sum(a => a.Dkp);
-                    var lostDkp = dkpHistoryOfPlayer.Where(a => a.Dkp < 0).Sum(a => a.Dkp);
-                    var spentDkp = lootHistoryOfPlayer.Sum(a => a.Cost);
-
-                    if (dkpEntry.LifetimeGained != gainedDkp)
-                    {
-                        yield return new MismatchedData(MismatchedDataType.LifetimeGained, player, dkpEntry.LifetimeGained, gainedDkp);
-                    }
-                    if (dkpEntry.LifetimeSpent != spentDkp)
-                    {
-                        yield return new MismatchedData(MismatchedDataType.LifetimeSpent, player, dkpEntry.LifetimeSpent, spentDkp);
-                    }
-
-                    var actualDkp = gainedDkp + lostDkp + spentDkp;
-                    if (dkpEntry.Dkp != actualDkp)
-                    {
-                        yield return new MismatchedData(MismatchedDataType.DkpNow, player, dkpEntry.Dkp, actualDkp);
-                    }
-                }
-            }
-        }
-
-        private enum MismatchedDataType
-        {
-            DkpNow,
-            LifetimeSpent,
-            LifetimeGained
-        }
-
-        private class MismatchedData
-        {
-            public MismatchedData(MismatchedDataType type, String player, Int32 expected, Int32 actual)
-            {
-                Type = type;
-                Player = player;
-                Expected = expected;
-                Actual = actual;
-            }
-
-            public String Player { get; set; }
-
-            public Int32 Expected { get; set; }
-
-            public Int32 Actual { get; set; }
-
-            public Int32 Diff => Expected - Actual;
-
-            public MismatchedDataType Type { get; set; }
-        }
-
-        /// <summary>
-        /// Test if the MonDKP database lua file can be loaded into objects properly.
-        /// </summary>
-        [TestMethod]
-        [DeploymentItem(SampleDataMonDkpLua)]
-        public void MonDkpDatabaseCanBeLoaded()
-        {
-            var result = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
-
-            Assert.IsNotNull(result);
-            Assert.IsNotNull(result.DkpTable);
-            Assert.IsNotNull(result.LootHistory);
-            Assert.IsNotNull(result.DkpHistory);
-
-            Assert.IsTrue(result.DkpTable.DkpEntries.Any());
-            Assert.IsTrue(result.LootHistory.LootEntries.Any());
-            Assert.IsTrue(result.DkpHistory.HistoryEntries.Any());
-        }
-
-        /// <summary>
-        /// Test if the MonDKP LootHistory can be loaded into objects properly.
-        /// </summary>
-        [TestMethod]
-        [DeploymentItem(SampleDataMonDkpLootHistoryXml)]
-        public void LootHistoryXmlCanBeLoaded()
-        {
-            var result = MonDkpFileLoader.LoadLootHistory(SampleDataMonDkpLootHistoryXml);
-
-            Assert.IsNotNull(result, $"{nameof(LootHistory)} is null!");
-            Assert.IsNotNull(result.LootEntries, $"{nameof(LootHistory)} list is null!");
-            Assert.IsTrue(result.LootEntries.Any(), $"{nameof(LootHistory)} list is empty!");
-
-            var firstEntry = result.LootEntries[0];
-            Assert.AreEqual("Bøunz", firstEntry.Player);
-            Assert.AreEqual("Rucksack aus Onyxias Haut", firstEntry.ItemName);
-            Assert.AreEqual(17966, firstEntry.ItemNumber);
-            Assert.AreEqual("Onyxias Versteck", firstEntry.Zone);
-            Assert.AreEqual("Onyxia", firstEntry.Boss);
-            Assert.AreEqual(1578855932, firstEntry.TimeStamp);
-            Assert.AreEqual(-81, firstEntry.Cost);
-
-            Debug.WriteLine(firstEntry);
         }
 
         /// <summary>
@@ -207,6 +77,140 @@ namespace DKP.Data.MonDKP.Lib.Tests
             Assert.AreEqual(-20, firstEntry.LifetimeSpent);
 
             Debug.WriteLine(firstEntry);
+        }
+
+        /// <summary>
+        /// Test if the MonDKP LootHistory can be loaded into objects properly.
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(SampleDataMonDkpLootHistoryXml)]
+        public void LootHistoryXmlCanBeLoaded()
+        {
+            var result = MonDkpFileLoader.LoadLootHistory(SampleDataMonDkpLootHistoryXml);
+
+            Assert.IsNotNull(result, $"{nameof(LootHistory)} is null!");
+            Assert.IsNotNull(result.LootEntries, $"{nameof(LootHistory)} list is null!");
+            Assert.IsTrue(result.LootEntries.Any(), $"{nameof(LootHistory)} list is empty!");
+
+            var firstEntry = result.LootEntries[0];
+            Assert.AreEqual("Bøunz", firstEntry.Player);
+            Assert.AreEqual("Rucksack aus Onyxias Haut", firstEntry.ItemName);
+            Assert.AreEqual(17966, firstEntry.ItemNumber);
+            Assert.AreEqual("Onyxias Versteck", firstEntry.Zone);
+            Assert.AreEqual("Onyxia", firstEntry.Boss);
+            Assert.AreEqual(1578855932, firstEntry.TimeStamp);
+            Assert.AreEqual(-81, firstEntry.Cost);
+
+            Debug.WriteLine(firstEntry);
+        }
+
+        /// <summary>
+        /// Test if the MonDKP database lua file can be loaded into objects properly.
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(SampleDataMonDkpLua)]
+        public void MonDkpDatabaseCanBeLoaded()
+        {
+            var result = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
+
+            Assert.IsNotNull(result);
+            Assert.IsNotNull(result.DkpTable);
+            Assert.IsNotNull(result.LootHistory);
+            Assert.IsNotNull(result.DkpHistory);
+
+            Assert.IsTrue(result.DkpTable.DkpEntries.Any());
+            Assert.IsTrue(result.LootHistory.LootEntries.Any());
+            Assert.IsTrue(result.DkpHistory.HistoryEntries.Any());
+        }
+
+        [TestMethod]
+        [DeploymentItem(SampleDataMonDkpLua)]
+        public void WriteMonDkpChunks()
+        {
+            var loadMonDkpDatabase = MonDkpFileLoader.LoadMonDkpDatabase(SampleDataMonDkpLua);
+            //var playerToKeep = "Ascadia";
+            //loadMonDkpDatabase.DkpTable.DkpEntries.RemoveAll(entry => entry.Player != playerToKeep);
+            //loadMonDkpDatabase.DkpHistory.HistoryEntries.RemoveAll(entry => !entry.Players.Contains(playerToKeep));
+            //loadMonDkpDatabase.LootHistory.LootEntries.RemoveAll(entry => entry.Player != playerToKeep);
+            //loadMonDkpDatabase.DkpHistory.HistoryEntries.ForEach(entry => entry.PlayerString =$"{playerToKeep},");
+
+            MonDkpWritingHelper.WriteMonDkpChunks(loadMonDkpDatabase, 200, @"D:\Temp\MonDKP");
+        }
+
+        private IEnumerable<MismatchedData> CheckDataConsistency(MonDkpDatabase database, params String[] players)
+        {
+            foreach (var player in players)
+            {
+                var lootHistoryOfPlayer = database.LootHistory.LootEntries.Where(a => a.Player == player 
+                                                                                      && String.IsNullOrWhiteSpace(a.Deletes)
+                                                                                      && String.IsNullOrWhiteSpace(a.DeletedBy));
+                var spentDkp = lootHistoryOfPlayer.Sum(a => Math.Abs(a.Cost)) * -1;
+
+                var dkpHistoryOfPlayer =
+                    database.DkpHistory.HistoryEntries.Where(a => a.Players.Contains(player)).ToList();
+
+                var lostDkp = dkpHistoryOfPlayer.Where(a => a.Dkp < 0).Sum(a => a.Dkp);
+                var gainedDkp = dkpHistoryOfPlayer.Where(a => a.Dkp > 0).Sum(a => a.Dkp);
+
+                var actualDkp = gainedDkp + lostDkp + spentDkp;
+
+                var dkpEntry = database.DkpTable.DkpEntries.SingleOrDefault(a => a.Player == player);
+                if(dkpEntry != null)
+                {
+                    if (dkpEntry.LifetimeGained != gainedDkp)
+                    {
+                        yield return new MismatchedData(MismatchedDataType.LifetimeGained, player, dkpEntry.LifetimeGained, gainedDkp);
+                    }
+
+                    if (dkpEntry.LifetimeSpent != spentDkp)
+                    {
+                        yield return new MismatchedData(MismatchedDataType.LifetimeSpent, player, dkpEntry.LifetimeSpent, spentDkp);
+                    }
+
+                    if (dkpEntry.Dkp != actualDkp)
+                    {
+                        yield return new MismatchedData(MismatchedDataType.DkpNow, player, dkpEntry.Dkp, actualDkp);
+                    }
+                }
+            }
+        }
+
+        private void LogSumMismatches(String title, Int32 expected, Int32 actual)
+        {
+            Debug.WriteLine($"{title}: Expected={expected}, Actual={actual}, Diff={expected - actual}");
+        }
+
+        private const String SampleDataMonDkpXml = @"SampleData\mon-dkp.xml";
+        private const String SampleDataMonDkpHistoryXml = @"SampleData\mon-dkp-history.xml";
+        private const String SampleDataMonDkpLootHistoryXml = @"SampleData\mon-loot-history.xml";
+        private const String SampleDataMonDkpLua = @"SampleData\MonolithDKP.lua";
+
+        private enum MismatchedDataType
+        {
+            DkpNow,
+            LifetimeSpent,
+            LifetimeGained
+        }
+
+        private class MismatchedData
+        {
+            public MismatchedData(MismatchedDataType type, String player, Int32 expected, Int32 actual)
+            {
+                Type = type;
+                Player = player;
+                Expected = expected;
+                Actual = actual;
+            }
+
+            public Int32 Actual { get; }
+
+            public Int32 Diff => Expected - Actual;
+
+            public Int32 Expected { get; }
+
+            public String Player { get; }
+
+            public MismatchedDataType Type { get; }
         }
     }
 }

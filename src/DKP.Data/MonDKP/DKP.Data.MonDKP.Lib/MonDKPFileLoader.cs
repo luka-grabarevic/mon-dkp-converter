@@ -71,6 +71,8 @@ namespace DKP.Data.MonDKP.Lib
                     Player = lootValue["player"].ToString(),
                     Zone = lootValue["zone"].ToString(),
                     Boss = lootValue["boss"].ToString(),
+                    DeletedBy = lootValue["deletedby"]?.ToString(),
+                    Deletes = lootValue["deletes"]?.ToString(),
                     Cost = Int32.Parse(lootValue["cost"].ToString()),
                     TimeStamp = Int64.Parse(lootValue["date"].ToString()),
                     ItemName = itemNameRegEx.Match(loot).Value,
