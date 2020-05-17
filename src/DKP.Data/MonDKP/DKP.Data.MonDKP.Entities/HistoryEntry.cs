@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Xml.Serialization;
 
 namespace DKP.Data.MonDKP.Entities
@@ -18,7 +19,14 @@ namespace DKP.Data.MonDKP.Entities
         public String PlayerString { get; set; }
 
         [XmlIgnore]
-        public String[] Players => PlayerString?.Split(',');
+        public String[] Players
+        {
+            get
+            {
+                var list =  PlayerString?.Split(',').ToList();
+                return list?.Take(list.Count - 1).ToArray();
+            }
+        }
 
         [XmlElement("dkp")]
         public Int32 Dkp { get; set; }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using DKP.Data.MonDKP.Entities;
@@ -40,8 +41,30 @@ namespace DKP.Data.MonDKP.Lib
                     }
                 };
 
+                CleanUpDkpList(db);
+
                 return db;
             }
+        }
+
+        private static void CleanUpDkpList(MonDkpDatabase db)
+        {
+            var validPlayers = 
+                db.DkpTable.DkpEntries.Select(a => a.Player).Distinct().ToList();
+            var invalidPlayers = 
+                db.DkpHistory.HistoryEntries.SelectMany(a => a.Players).Distinct().Where(a => !validPlayers.Contains(a)).ToList();
+
+            db.LootHistory.LootEntries.RemoveAll(a => !validPlayers.Contains(a.Player));
+
+            foreach (var dkpEntry in db.DkpHistory.HistoryEntries)
+            {
+                foreach (var invalidPlayer in invalidPlayers)
+                {
+                    dkpEntry.PlayerString = dkpEntry.PlayerString.Replace($"{invalidPlayer},", string.Empty);
+                }
+            }
+
+            db.DkpHistory.HistoryEntries.RemoveAll(a => string.IsNullOrEmpty(a.PlayerString));
         }
 
         private static IEnumerable<DkpEntry> GetDkpEntries(Lua lua)
