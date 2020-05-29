@@ -86,31 +86,31 @@ namespace DKP.Data.MonDKP.Lib
             var take = chunkSize;
             var i = 0;
             Int32 lootCount;
-            Int32 historyCount;
+            //Int32 historyCount;
 
             var lootHistoryLootEntries = database.LootHistory.LootEntries.OrderByDescending(a => a.TimeStamp).ToList();
-            var dkpHistoryHistoryEntries = database.DkpHistory.HistoryEntries.OrderByDescending(a => a.TimeStamp).ToList();
+            //var dkpHistoryHistoryEntries = database.DkpHistory.HistoryEntries.OrderByDescending(a => a.TimeStamp).ToList();
 
             do
             {
                 var lootChunk = lootHistoryLootEntries.Skip(i * take).Take(take).ToList();
-                var historyChunk = dkpHistoryHistoryEntries.Skip(i * take).Take(take).ToList();
+                //var historyChunk = dkpHistoryHistoryEntries.Skip(i * take).Take(take).ToList();
 
-                historyCount = historyChunk.Count;
+                //historyCount = historyChunk.Count;
                 lootCount = lootChunk.Count;
 
                 i++;
 
-                if (lootCount > 0 || historyCount > 0)
+                if (lootCount > 0)
                 {
                     var chunkDb = new MonDkpDatabase();
                     chunkDb.LootHistory.LootEntries.AddRange(lootChunk);
-                    chunkDb.DkpHistory.HistoryEntries.AddRange(historyChunk);
+                    //chunkDb.DkpHistory.HistoryEntries.AddRange(historyChunk);
 
                     chunks.Add(chunkDb);
                 }
             }
-            while (lootCount > 0 || historyCount > 0);
+            while (lootCount > 0);
 
             return chunks;
         }

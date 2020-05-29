@@ -135,7 +135,7 @@ namespace DKP.Data.MonDKP.Lib.Tests
             //loadMonDkpDatabase.LootHistory.LootEntries.RemoveAll(entry => entry.Player != playerToKeep);
             //loadMonDkpDatabase.DkpHistory.HistoryEntries.ForEach(entry => entry.PlayerString =$"{playerToKeep},");
 
-            MonDkpWritingHelper.WriteMonDkpChunks(loadMonDkpDatabase, 200, @"D:\Temp\MonDKP");
+            MonDkpWritingHelper.WriteMonDkpChunks(loadMonDkpDatabase, 100, @"D:\Temp\MonDKP");
         }
 
         private IEnumerable<MismatchedData> CheckDataConsistency(MonDkpDatabase database, params String[] players)

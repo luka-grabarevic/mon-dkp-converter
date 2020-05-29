@@ -348,3 +348,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/src/DKP.Data/EQdkpPlus/DKP.Data.EQdkpPlus.Lib.Tests/SecretDataProvider.Local.cs
